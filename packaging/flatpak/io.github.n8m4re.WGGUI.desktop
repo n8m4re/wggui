@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=WGGUI
+GenericName=VPN Server Manager
+GenericName[de]=VPN-Server-Verwaltung
+Comment=Manage WireGuard® servers over SSH
+Comment[de]=WireGuard®-Server per SSH verwalten
+Exec=wggui
+Icon=io.github.n8m4re.WGGUI
+Terminal=false
+Categories=Network;Qt;
+Keywords=WireGuard;VPN;SSH;QR;
+StartupWMClass=io.github.n8m4re.WGGUI

@@ -1,0 +1,56 @@
+[project]
+name = "wggui"
+version = "0.1.0"
+description = "Desktop app to manage WireGuard® servers on Linux over SSH"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.12"
+# Prefer distro PySide6 (e.g. Fedora python3-pyside6: system Qt matches desktop style and Wayland);
+# create the venv with --system-site-packages. Without a distro package, use the PyPI "qt" extra
+# (PySide6-Essentials = QtCore/QtGui/QtWidgets, official Qt for Python). scripts/wggui.sh selects it.
+dependencies = [
+    "cryptography>=42",
+    "segno>=1.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/n8m4re/wggui"
+Issues = "https://github.com/n8m4re/wggui/issues"
+
+[project.optional-dependencies]
+qt = ["PySide6-Essentials>=6.6"]
+
+[project.scripts]
+wggui = "wggui.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wggui"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "pytest-qt>=4.5.0",
+    "ruff>=0.17.5",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# The venv sees system and user site-packages (for PySide6); do not load unrelated pytest plugins
+addopts = "--disable-plugin-autoload -p pytestqt.plugin -m 'not integration'"
+markers = ["integration: SSH-Tests gegen die Distro-Testcontainer (tests/integration)"]
+qt_api = "pyside6"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "S105", "S106", "S108", "S603", "S607"]
+"src/wggui/remote.py" = ["S603", "S607"]

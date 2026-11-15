@@ -1,0 +1,1769 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/wggui/apply.py:136
+msgid "Die Config wurde seit dem Lesen geändert – nichts geschrieben. Neu lesen (F5) und erneut versuchen."
+msgstr "読み込み後に設定が変更されました。書き込みは行っていません。再読み込み（F5）して、もう一度お試しください。"
+
+#: src/wggui/apply.py:137
+msgid "wg syncconf fehlgeschlagen – die alte Config wurde wiederhergestellt."
+msgstr "wg syncconf に失敗しました。以前の設定を復元しました。"
+
+#: src/wggui/apply.py:138
+msgid "Keine offene Änderung – der Rollback ist vermutlich schon gelaufen."
+msgstr "保留中の変更はありません。ロールバックはすでに実行された可能性があります。"
+
+#: src/wggui/apply.py:139 src/wggui/provision.py:105
+msgid "Auf dem Host fehlt setsid – ohne Rollback-Timer wird nichts geschrieben."
+msgstr "ホストに setsid がありません。ロールバックタイマーなしでは書き込みません。"
+
+#: src/wggui/apply.py:140
+msgid "Neue Config nicht erzeugt (Peer nicht gefunden?) – nichts geändert."
+msgstr "新しい設定を作成できませんでした（Peer が見つからない可能性があります）。変更は行っていません。"
+
+#: src/wggui/apply.py:177
+msgid "Prüfsumme der Config nicht lesbar"
+msgstr "設定のチェックサムを読み取れません"
+
+#: src/wggui/apply.py:202
+msgid "Peer-Block anhängen"
+msgstr "Peer ブロックを追加"
+
+#: src/wggui/apply.py:213
+msgid "wg syncconf: laufender Tunnel übernimmt die Änderung, bestehende Verbindungen bleiben"
+msgstr "wg syncconf: 実行中のトンネルに変更を反映し、既存の接続を維持します"
+
+#: src/wggui/apply.py:214
+msgid "Interface läuft nicht: nur die Datei wird geändert, gilt beim nächsten Start"
+msgstr "インターフェースは稼働していません。ファイルのみを変更し、次回の起動時に反映します"
+
+#: src/wggui/apply.py:216
+msgid "Prüfen, ob {conf_path} seit dem Lesen unverändert ist"
+msgstr "読み込み後に {conf_path} が変更されていないことを確認"
+
+#: src/wggui/apply.py:217
+msgid "Backup: {backup_path}"
+msgstr "バックアップ: {backup_path}"
+
+#: src/wggui/apply.py:218
+msgid "Rollback-Timer: ohne Bestätigung nach {rollback_seconds} s Backup zurückspielen"
+msgstr "ロールバックタイマー: {rollback_seconds} 秒以内に確認がなければバックアップを復元"
+
+#: src/wggui/apply.py:220
+msgid "{action}: {conf_path} (neue Datei wird vorher geprüft)"
+msgstr "{action}: {conf_path}（新しいファイルを先に検証）"
+
+#: src/wggui/apply.py:223
+msgid "Bestätigen (neuer SSH-Aufruf) – erst dann bleibt die Änderung"
+msgstr "確認（新しい SSH 呼び出し）。確認後に変更が確定します"
+
+#: src/wggui/apply.py:231
+msgid "interner Fehler: Plan unvollständig"
+msgstr "内部エラー: 計画が不完全です"
+
+#: src/wggui/apply.py:233
+msgid "Auf dem Host fehlt setsid (util-linux) – ohne Rollback-Timer schreibt die App nicht."
+msgstr "ホストに setsid (util-linux) がありません。ロールバックタイマーなしではアプリは書き込みません。"
+
+#: src/wggui/apply.py:235
+msgid "Auf dem Host fehlt wg-quick – der laufende Tunnel kann nicht aktualisiert werden."
+msgstr "ホストに wg-quick がありません。実行中のトンネルを更新できません。"
+
+#: src/wggui/apply.py:242
+msgid "Plan unvollständig"
+msgstr "計画が不完全です"
+
+#: src/wggui/apply.py:294
+msgid "Geschrieben, aber nicht bestätigt: {err}\n→ {plan_host_name} spielt nach {plan_rollback_seconds} s das Backup {plan_backup_path} zurück. Danach neu lesen und erneut versuchen."
+msgstr "書き込みましたが、確認できませんでした: {err}\n→ {plan_host_name} は {plan_rollback_seconds} 秒後にバックアップ {plan_backup_path} を復元します。その後、再読み込みしてもう一度お試しください。"
+
+#: src/wggui/client.py:102
+msgid "Adresse {ip} ist schon vergeben."
+msgstr "アドレス {ip} はすでに使用されています。"
+
+#: src/wggui/client.py:110
+msgid "Name: 1–40 Zeichen, Buchstaben, Ziffern, Leerzeichen und . _ @ + -"
+msgstr "名前: 1～40 文字。英数字、スペース、. _ @ + - を使用できます"
+
+#: src/wggui/client.py:118
+msgid "Endpoint: Hostname:Port, z. B. vpn.example.org:51820"
+msgstr "Endpoint: ホスト名:ポート（例: vpn.example.org:51820）"
+
+#: src/wggui/client.py:128
+msgid "DNS: {v} ist keine IP-Adresse."
+msgstr "DNS: {v} は IP アドレスではありません。"
+
+#: src/wggui/client.py:148 src/wggui/edit.py:178
+msgid "ungültiger PublicKey"
+msgstr "無効な PublicKey"
+
+#: src/wggui/client.py:85
+msgid "Adresse fehlt."
+msgstr "アドレスがありません。"
+
+#: src/wggui/client.py:93
+msgid "Adresse {text}: keine gültige IP-Adresse."
+msgstr "アドレス {text}: 有効な IP アドレスではありません。"
+
+#: src/wggui/client.py:96
+msgid "Adresse {text}: nur eine einzelne Adresse (/{ip_max_prefixlen})."
+msgstr "アドレス {text}: 単一のアドレスのみ指定できます（/{ip_max_prefixlen}）。"
+
+#: src/wggui/client.py:99
+msgid "Adresse {ip} liegt nicht im Netz des Interfaces ({v2})."
+msgstr "アドレス {ip} はインターフェースのネットワーク（{v2}）に含まれません。"
+
+#: src/wggui/db.py:158
+msgid "Name: Buchstaben, Ziffern, . _ - (max. 63 Zeichen)"
+msgstr "名前: 英数字と . _ -（最大 63 文字）"
+
+#: src/wggui/db.py:160
+msgid "SSH-Ziel: z. B. root@server.example.org oder ein Alias aus ~/.ssh/config"
+msgstr "SSH 接続先: root@server.example.org または ~/.ssh/config のエイリアスなど"
+
+#: src/wggui/db.py:162
+msgid "Port: 1–65535"
+msgstr "ポート: 1～65535"
+
+#: src/wggui/db.py:183
+msgid "Datenbank ist neuer (Version {version}) als die App ({SCHEMA_VERSION})"
+msgstr "データベース（バージョン {version}）はアプリ（{SCHEMA_VERSION}）より新しいです"
+
+#: src/wggui/db.py:274 src/wggui/db.py:278
+msgid "neu"
+msgstr "新規"
+
+#: src/wggui/db.py:275
+msgid "{v1}, {n_peers} Peers"
+msgstr "{v1}、Peer {n_peers} 個"
+
+#: src/wggui/db.py:276
+msgid "ohne Adresse"
+msgstr "アドレスなし"
+
+#: src/wggui/db.py:278
+msgid "Peer {v1} ({name})"
+msgstr "Peer {v1}（{name}）"
+
+#: src/wggui/db.py:284
+msgid "Adresse: {v1} → {v2}"
+msgstr "アドレス: {v1} → {v2}"
+
+#: src/wggui/db.py:286
+msgid "ListenPort: {old_listen_port} → {conf_listen_port}"
+msgstr "ListenPort: {old_listen_port} → {conf_listen_port}"
+
+#: src/wggui/db.py:289
+msgid "PublicKey geändert"
+msgstr "PublicKey を変更"
+
+#: src/wggui/db.py:291
+msgid "weitere Optionen (DNS, MTU, PostUp …)"
+msgstr "その他のオプション（DNS、MTU、PostUp …）"
+
+#: src/wggui/db.py:293 src/wggui/db.py:326
+msgid "geändert"
+msgstr "変更済み"
+
+#: src/wggui/db.py:296 src/wggui/db.py:330
+msgid "entfernt"
+msgstr "削除済み"
+
+#: src/wggui/db.py:296 src/wggui/db.py:274 src/wggui/db.py:293
+msgid "Interface {name}"
+msgstr "インターフェース {name}"
+
+#: src/wggui/db.py:297 src/wggui/db.py:332
+msgid "auf dem Server nicht mehr vorhanden"
+msgstr "サーバー上に存在しません"
+
+#: src/wggui/db.py:306
+msgid "Peer {name} ({iface})"
+msgstr "Peer {name}（{iface}）"
+
+#: src/wggui/db.py:312
+msgid "Name: {v1} → {p_name}"
+msgstr "名前: {v1} → {p_name}"
+
+#: src/wggui/db.py:314
+msgid "AllowedIPs: {v1} → {v2}"
+msgstr "AllowedIPs: {v1} → {v2}"
+
+#: src/wggui/db.py:316
+msgid "Endpoint: {v1} → {v2}"
+msgstr "Endpoint: {v1} → {v2}"
+
+#: src/wggui/db.py:318
+msgid "Keepalive: {v1} → {v2}"
+msgstr "Keepalive: {v1} → {v2}"
+
+#: src/wggui/db.py:322 src/wggui/sync.py:74
+msgid "weitere Optionen"
+msgstr "その他のオプション"
+
+#: src/wggui/db.py:330
+msgid "Peer {v1} ({iface_name})"
+msgstr "Peer {v1}（{iface_name}）"
+
+#: src/wggui/discover.py:106
+msgid "Paket wireguard-tools über den Paketmanager installieren"
+msgstr "パッケージマネージャーで wireguard-tools をインストール"
+
+#: src/wggui/discover.py:180
+msgid "Kein root-Zugriff – /etc/wireguard ist so nicht lesbar. Als root anmelden oder beim Host „sudo verwenden“ einschalten (braucht NOPASSWD)."
+msgstr "root 権限がないため、/etc/wireguard を読み取れません。root としてログインするか、ホストの「sudo を使用」を有効にしてください（NOPASSWD が必要です）。"
+
+#: src/wggui/discover.py:185
+msgid "wireguard-tools nicht installiert – auf dem Host: {info_install_hint}"
+msgstr "ホストに wireguard-tools がインストールされていません。{info_install_hint}"
+
+#: src/wggui/discover.py:191
+msgid "Datei {name}.conf übersprungen (ungültiger Interface-Name)"
+msgstr "ファイル {name}.conf をスキップしました（インターフェース名が無効です）"
+
+#: src/wggui/discover.py:198
+msgid "{name}.conf nicht lesbar: {err}"
+msgstr "{name}.conf を読み取れません: {err}"
+
+#: src/wggui/discover.py:209
+msgid "Laufzeitdaten (wg show) nicht lesbar: {err}"
+msgstr "実行時データ（wg show）を読み取れません: {err}"
+
+#: src/wggui/discover.py:217
+msgid "{name}: SaveConfig = true – wg-quick überschreibt die Datei beim Stoppen"
+msgstr "{name}: SaveConfig = true。停止時に wg-quick がファイルを上書きします"
+
+#: src/wggui/discover.py:220
+msgid "{name}: Config vorhanden, Interface läuft nicht"
+msgstr "{name}: 設定はありますが、インターフェースは稼働していません"
+
+#: src/wggui/discover.py:223
+msgid "{name}: läuft, aber keine Datei in {WG_DIR} (anderes Werkzeug?)"
+msgstr "{name}: 実行中ですが、{WG_DIR} にファイルがありません（別のツールで起動した可能性があります）"
+
+#: src/wggui/edit.py:176
+msgid "unbekannte Operation {op!r}"
+msgstr "不明な操作 {op!r}"
+
+#: src/wggui/edit.py:182 src/wggui/provision.py:248 src/wggui/ui/dialogs.py:576
+msgid "AllowedIPs fehlen."
+msgstr "AllowedIPs がありません。"
+
+#: src/wggui/edit.py:184
+msgid "Keepalive: 1–65535 Sekunden oder leer."
+msgstr "Keepalive: 1～65535 秒、または空欄にしてください。"
+
+#: src/wggui/edit.py:186
+msgid "Zustand: on oder off"
+msgstr "状態: on または off"
+
+#: src/wggui/edit.py:189
+msgid "neuer PublicKey ungültig"
+msgstr "新しい PublicKey が無効です"
+
+#: src/wggui/edit.py:191
+msgid "ungültiger PresharedKey"
+msgstr "無効な PresharedKey"
+
+#: src/wggui/edit.py:202
+msgid "Pro Peer nur eine Änderung je Plan."
+msgstr "1 つの計画で変更できるのは、Peer ごとに 1 件だけです。"
+
+#: src/wggui/edit.py:218
+msgid "Peer nicht gefunden – „Mit Server abgleichen…“ zeigt, was abweicht."
+msgstr "Peer が見つかりません。「サーバーと同期…」で相違点を確認できます。"
+
+#: src/wggui/edit.py:219
+msgid "Peer existiert schon (Schlüssel bereits vergeben)."
+msgstr "Peer はすでに存在します（鍵が使用されています）。"
+
+#: src/wggui/fmt.py:25
+msgid "nie"
+msgstr "なし"
+
+#: src/wggui/fmt.py:28
+msgid "vor {v1} s"
+msgstr "{v1} 秒前"
+
+#: src/wggui/fmt.py:30
+msgid "vor {v1} min"
+msgstr "{v1} 分前"
+
+#: src/wggui/fmt.py:32
+msgid "vor {v1} h"
+msgstr "{v1} 時間前"
+
+#: src/wggui/fmt.py:33
+msgid "vor {v1} d"
+msgstr "{v1} 日前"
+
+#: src/wggui/provision.py:103
+msgid "Interface existiert schon – anderen Namen wählen."
+msgstr "インターフェースは既に存在します。別の名前を選んでください。"
+
+#: src/wggui/provision.py:104
+msgid "Interface ließ sich nicht starten – Datei wieder entfernt."
+msgstr "インターフェースを開始できなかったため、ファイルを削除しました。"
+
+#: src/wggui/provision.py:106
+msgid "wireguard-tools fehlen auf dem Host – zuerst installieren."
+msgstr "ホストに wireguard-tools がありません。先にインストールしてください。"
+
+#: src/wggui/provision.py:131
+msgid "Neues Interface {name} anlegen"
+msgstr "新しいインターフェース {name} を作成"
+
+#: src/wggui/provision.py:141
+msgid "(wird auf dem Server erzeugt, verlässt ihn nie)"
+msgstr "（サーバー上で生成され、外部には送られません）"
+
+#: src/wggui/provision.py:144
+msgid "Schlüssel auf dem Server erzeugen (wg genkey)"
+msgstr "サーバー上で鍵を生成 (wg genkey)"
+
+#: src/wggui/provision.py:145
+msgid "Datei {path} anlegen (Rechte 0600)"
+msgstr "ファイル {path} を作成（パーミッション 0600）"
+
+#: src/wggui/provision.py:146
+msgid "Rollback-Timer: ohne Bestätigung nach {seconds} s Interface stoppen und Datei entfernen"
+msgstr "ロールバックタイマー: {seconds} 秒以内に確認されなければ、インターフェースを停止してファイルを削除"
+
+#: src/wggui/provision.py:149
+msgid "Beim Booten starten und jetzt starten (systemctl enable --now wg-quick@{name}; ohne systemd: wg-quick up)"
+msgstr "起動時に有効化して今すぐ開始 (systemctl enable --now wg-quick@{name}; systemd がない場合: wg-quick up)"
+
+#: src/wggui/provision.py:152
+msgid "Jetzt starten (wg-quick up)"
+msgstr "今すぐ開始 (wg-quick up)"
+
+#: src/wggui/provision.py:153
+msgid "Bestätigen (neuer SSH-Aufruf) – erst dann bleibt das Interface"
+msgstr "確認（新しい SSH 接続）後にインターフェースを維持"
+
+#: src/wggui/provision.py:161
+msgid "Name: Buchstaben, Ziffern, _ = + . - (max. 15 Zeichen)."
+msgstr "名前: 英字、数字、_ = + . - を使用できます（最大 15 文字）。"
+
+#: src/wggui/provision.py:163
+msgid "Interface {name} gibt es auf diesem Host schon."
+msgstr "このホストにはインターフェース {name} が既に存在します。"
+
+#: src/wggui/provision.py:167
+msgid "Adresse: z. B. 10.98.1.1/24"
+msgstr "アドレス: 例 10.98.1.1/24"
+
+#: src/wggui/provision.py:169
+msgid "Adresse: mit Netzmaske angeben, z. B. 10.98.1.1/24"
+msgstr "アドレス: ネットマスクを含めてください。例 10.98.1.1/24"
+
+#: src/wggui/provision.py:171
+msgid "ListenPort: 1–65535"
+msgstr "ListenPort: 1–65535"
+
+#: src/wggui/provision.py:174
+msgid "ListenPort {port} nutzt schon {other}."
+msgstr "ListenPort {port} は既に {other} が使用しています。"
+
+#: src/wggui/provision.py:181
+msgid "Netz überschneidet sich mit {other} ({net})."
+msgstr "ネットワークが {other} ({net}) と重複しています。"
+
+#: src/wggui/provision.py:218
+msgid "Public Key des neuen Interfaces nicht lesbar."
+msgstr "新しいインターフェースの公開鍵を読み取れません。"
+
+#: src/wggui/provision.py:265
+msgid "(neu, wird nicht angezeigt)"
+msgstr "（新規、表示されません）"
+
+#: src/wggui/provision.py:269
+msgid "Tunnel zu {host}/{iface} anlegen"
+msgstr "{host}/{iface} へのトンネルを作成"
+
+#: src/wggui/provision.py:46
+msgid "Für diese Distribution gibt es keine automatische Installation."
+msgstr "このディストリビューションでは自動インストールを利用できません。"
+
+#: src/wggui/provision.py:49
+msgid "wireguard-tools sind nach der Installation nicht verfügbar."
+msgstr "インストール後も wireguard-tools を利用できません。"
+
+#: src/wggui/remote.py:36
+msgid "Anmeldung abgelehnt: Schlüssel nicht im SSH-Agent oder nicht in authorized_keys des Zielnutzers."
+msgstr "ログインが拒否されました。鍵が SSH エージェント、または接続先ユーザーの authorized_keys にありません。"
+
+#: src/wggui/remote.py:38
+msgid "Host-Key unbekannt oder geändert: einmal im Terminal `ssh <Ziel>` ausführen und den Fingerabdruck prüfen."
+msgstr "ホストキーが不明か変更されています。ターミナルで一度 `ssh <接続先>` を実行し、フィンガープリントを確認してください。"
+
+#: src/wggui/remote.py:40
+msgid "Host-Key hat sich geändert – erst prüfen, dann den alten Eintrag mit `ssh-keygen -R <host>` entfernen."
+msgstr "ホストキーが変更されています。確認後、`ssh-keygen -R <host>` で古い登録を削除してください。"
+
+#: src/wggui/remote.py:42
+msgid "Hostname nicht auflösbar: Schreibweise, DNS oder ssh-Config prüfen."
+msgstr "ホスト名を解決できません。綴り、DNS、ssh 設定を確認してください。"
+
+#: src/wggui/remote.py:43
+msgid "Port geschlossen: läuft sshd, stimmt der Port?"
+msgstr "ポートが閉じています。sshd が実行中か、ポートが正しいか確認してください。"
+
+#: src/wggui/remote.py:44 src/wggui/remote.py:45
+msgid "Keine Antwort: Host aus, Firewall oder falsches Netz (VPN?)."
+msgstr "応答がありません。ホストの停止、ファイアウォール、ネットワーク（VPN など）を確認してください。"
+
+#: src/wggui/remote.py:46
+msgid "Keine Route zum Host: Netz oder VPN prüfen."
+msgstr "ホストへの経路がありません。ネットワークまたは VPN を確認してください。"
+
+#: src/wggui/remote.py:47 src/wggui/remote.py:49
+msgid "sudo verlangt ein Passwort: NOPASSWD für diesen Nutzer einrichten oder als root anmelden."
+msgstr "sudo がパスワードを要求しています。このユーザーに NOPASSWD を設定するか、root としてログインしてください。"
+
+#: src/wggui/remote.py:51 src/wggui/remote.py:52
+msgid "sudo ist auf dem Host nicht installiert."
+msgstr "ホストに sudo がインストールされていません。"
+
+#: src/wggui/remote.py:56
+msgid "Befehl fehlgeschlagen"
+msgstr "コマンドに失敗しました"
+
+#: src/wggui/sshkeys.py:44
+msgid "Schlüsseldatei fehlt."
+msgstr "鍵ファイルがありません。"
+
+#: src/wggui/sshkeys.py:47
+msgid "Schlüsseldatei: vollständigen Pfad angeben."
+msgstr "鍵ファイル: 絶対パスを入力してください。"
+
+#: src/wggui/sshkeys.py:49
+msgid "Schlüsseldatei: die private Datei wählen (ohne .pub)."
+msgstr "鍵ファイル: 秘密鍵のファイル（.pub が付かないもの）を選択してください。"
+
+#: src/wggui/sshkeys.py:51
+msgid "Schlüsseldatei {p} nicht gefunden."
+msgstr "鍵ファイル {p} が見つかりません。"
+
+#: src/wggui/sshkeys.py:53
+msgid "Schlüsseldatei {p} ist für andere lesbar – ssh lehnt sie ab (chmod 600)."
+msgstr "鍵ファイル {p} を他のユーザーが読み取れます。ssh はこの鍵を拒否します（chmod 600）。"
+
+#: src/wggui/sshkeys.py:70
+msgid "Kommentar für den Schlüssel ungültig"
+msgstr "鍵のコメントが無効です"
+
+#: src/wggui/sshkeys.py:72
+msgid "{path} gibt es schon – anderen Namen wählen oder die vorhandene Datei nehmen."
+msgstr "{path} はすでに存在します。別の名前を選ぶか、既存のファイルを使用してください。"
+
+#: src/wggui/sshkeys.py:81
+msgid "ssh-keygen fehlgeschlagen: {v1}"
+msgstr "ssh-keygen に失敗しました: {v1}"
+
+#: src/wggui/sshkeys.py:85
+msgid "Public Key nach dem Erzeugen nicht lesbar"
+msgstr "生成後に公開鍵を読み取れません"
+
+#: src/wggui/sync.py:109
+msgid "Keepalive"
+msgstr "Keepalive"
+
+#: src/wggui/sync.py:115
+msgid "nur in der Laufzeit (fehlen in der Datei): "
+msgstr "実行時のみ（ファイルにはありません）: "
+
+#: src/wggui/sync.py:118
+msgid "in der Datei, aber nicht geladen: "
+msgstr "ファイルにはありますが、読み込まれていません: "
+
+#: src/wggui/sync.py:121
+msgid "Laufzeit weicht von der Datei ab: "
+msgstr "実行時の状態がファイルと異なります: "
+
+#: src/wggui/sync.py:122
+msgid "Laufzeit (wg show)"
+msgstr "実行時（wg show）"
+
+#: src/wggui/sync.py:148
+msgid "Auswahl {c!r} passt nicht zu {d_label}"
+msgstr "選択 {c!r} は {d_label} に適合しません"
+
+#: src/wggui/sync.py:18 src/wggui/ui/dialogs.py:227 src/wggui/ui/dialogs.py:664
+msgid "In die App übernehmen"
+msgstr "アプリに反映"
+
+#: src/wggui/sync.py:19
+msgid "Server anpassen"
+msgstr "サーバーを変更"
+
+#: src/wggui/sync.py:20
+msgid "Aus der App entfernen"
+msgstr "アプリから削除"
+
+#: src/wggui/sync.py:21
+msgid "Auf dem Server anlegen (ohne PSK)"
+msgstr "サーバーに作成（PSK なし）"
+
+#: src/wggui/sync.py:22
+msgid "Vom Server entfernen"
+msgstr "サーバーから削除"
+
+#: src/wggui/sync.py:23 src/wggui/ui/main_window.py:1464
+msgid "Laufzeit an die Datei angleichen"
+msgstr "実行時の状態をファイルに合わせる"
+
+#: src/wggui/sync.py:24
+msgid "Nichts tun"
+msgstr "何もしない"
+
+#: src/wggui/sync.py:28
+msgid "Peer {v1}…"
+msgstr "Peer {v1}…"
+
+#: src/wggui/sync.py:59
+msgid "Name: App {v1} / Server {srv_name}"
+msgstr "名前: アプリ {v1} / サーバー {srv_name}"
+
+#: src/wggui/sync.py:61
+msgid "AllowedIPs: App {v1} / Server {v2}"
+msgstr "AllowedIPs: アプリ {v1} / サーバー {v2}"
+
+#: src/wggui/sync.py:63
+msgid "Keepalive: App {v1} / Server {v2}"
+msgstr "Keepalive: アプリ {v1} / サーバー {v2}"
+
+#: src/wggui/sync.py:65
+msgid "Gesperrt: App {v1} / Server {v2}"
+msgstr "無効: アプリ {v1} / サーバー {v2}"
+
+#: src/wggui/sync.py:69
+msgid "Endpoint: App {v1} / Server {v2}"
+msgstr "Endpoint: アプリ {v1} / サーバー {v2}"
+
+#: src/wggui/sync.py:72
+msgid "nur auf dem Server"
+msgstr "サーバーのみ"
+
+#: src/wggui/sync.py:72
+msgid "nur in der App"
+msgstr "アプリのみ"
+
+#: src/wggui/sync.py:87
+msgid "nur auf dem Server: {v1}"
+msgstr "サーバーのみ: {v1}"
+
+#: src/wggui/sync.py:98
+msgid "nur in der App: {v1} – auf dem Server nicht (mehr) vorhanden"
+msgstr "アプリのみ: {v1}。サーバー上には存在しません"
+
+#: src/wggui/ui/dialogs.py:109
+msgid "SSH-Schlüssel:"
+msgstr "SSH 鍵:"
+
+#: src/wggui/ui/dialogs.py:112
+msgid "Anmeldung über den SSH-Agent. Neuen Server vorher einmal im Terminal mit <code>ssh &lt;ziel&gt;</code> verbinden (Host-Key bestätigen)."
+msgstr "SSH エージェントでログインします。新しいサーバーには、先にターミナルから <code>ssh &lt;接続先&gt;</code> で一度接続し、ホストキーを承認してください。"
+
+#: src/wggui/ui/dialogs.py:114
+msgid "Login als root oder mit sudo ohne Passwort. Unterstützt: Debian/Ubuntu, Fedora/RHEL, Arch, Alpine, openSUSE."
+msgstr "root またはパスワード不要の sudo でログインします。対応: Debian/Ubuntu、Fedora/RHEL、Arch、Alpine、openSUSE。"
+
+#: src/wggui/ui/dialogs.py:120
+msgid "Speichern"
+msgstr "保存"
+
+#: src/wggui/ui/dialogs.py:155
+msgid "Private SSH-Schlüsseldatei wählen"
+msgstr "SSH 秘密鍵ファイルを選択"
+
+#: src/wggui/ui/dialogs.py:161
+msgid "Zuerst einen gültigen Namen eingeben – er bestimmt den Dateinamen des Schlüssels."
+msgstr "先に有効な名前を入力してください。鍵ファイル名に使用されます。"
+
+#: src/wggui/ui/dialogs.py:187 src/wggui/ui/dialogs.py:334
+msgid "Name fehlt."
+msgstr "名前がありません。"
+
+#: src/wggui/ui/dialogs.py:189
+msgid "SSH-Ziel fehlt."
+msgstr "SSH 接続先がありません。"
+
+#: src/wggui/ui/dialogs.py:191
+msgid "Name: „{name}“ ist schon vergeben."
+msgstr "名前「{name}」はすでに使用されています。"
+
+#: src/wggui/ui/dialogs.py:214
+msgid "Vom Server übernehmen – {host_name}"
+msgstr "サーバーから取り込む – {host_name}"
+
+#: src/wggui/ui/dialogs.py:216
+msgid "Diese Änderungen werden aus <b>{v1}</b> in die App übernommen. Auf dem Server wird nichts geändert."
+msgstr "これらの変更を <b>{v1}</b> からアプリに取り込みます。サーバーは変更しません。"
+
+#: src/wggui/ui/dialogs.py:220
+msgid "Art"
+msgstr "種類"
+
+#: src/wggui/ui/dialogs.py:220
+msgid "Was"
+msgstr "対象"
+
+#: src/wggui/ui/dialogs.py:220
+msgid "Details"
+msgstr "詳細"
+
+#: src/wggui/ui/dialogs.py:248
+msgid "z. B. handy"
+msgstr "例: スマートフォン"
+
+#: src/wggui/ui/dialogs.py:249
+msgid "Steht als Kommentar über dem Peer in der Server-Config."
+msgstr "サーバー設定の Peer の上にコメントとして記録されます。"
+
+#: src/wggui/ui/dialogs.py:252
+msgid "Adresse des Clients im VPN ({nets}). Vorschlag: erste freie Adresse."
+msgstr "VPN 内のクライアントアドレス（{nets}）。最初の空きアドレスを提案します。"
+
+#: src/wggui/ui/dialogs.py:253
+msgid "Nur das &VPN-Netz ({nets})"
+msgstr "VPN ネットワーク（{nets}）のみ(&V)"
+
+#: src/wggui/ui/dialogs.py:254
+msgid "&Gesamter Internetverkehr über den Server"
+msgstr "すべてのインターネット通信をサーバー経由にする(&A)"
+
+#: src/wggui/ui/dialogs.py:256
+msgid "Dafür muss der Server Weiterleitung und NAT erlauben (sysctl, Firewall). Die App ändert das nicht."
+msgstr "サーバーで転送と NAT を許可する必要があります（sysctl、ファイアウォール）。アプリはこれらを変更しません。"
+
+#: src/wggui/ui/dialogs.py:263
+msgid "Wie der Client den Server von außen erreicht (Hostname oder IP und Port)."
+msgstr "クライアントが外部からサーバーに接続するためのホスト名または IP アドレスとポート。"
+
+#: src/wggui/ui/dialogs.py:265
+msgid "optional, z. B. 10.98.0.1"
+msgstr "任意、例: 10.98.0.1"
+
+#: src/wggui/ui/dialogs.py:266 src/wggui/ui/provision_dialogs.py:152
+msgid "&PresharedKey verwenden (zusätzlicher Schutz)"
+msgstr "PresharedKey を使用する（保護を追加）(&P)"
+
+#: src/wggui/ui/dialogs.py:268
+msgid "Verbindung &offen halten (PersistentKeepalive 25 s, für Handys hinter NAT)"
+msgstr "接続を維持する（PersistentKeepalive 25 秒、NAT 内のスマートフォン向け）(&K)"
+
+#: src/wggui/ui/dialogs.py:277
+msgid "Verkehr:"
+msgstr "通信:"
+
+#: src/wggui/ui/dialogs.py:280
+msgid "Verbindung (vorbelegt)"
+msgstr "接続（入力済み）"
+
+#: src/wggui/ui/dialogs.py:285
+msgid "Weitere Einstellungen"
+msgstr "その他の設定"
+
+#: src/wggui/ui/dialogs.py:298
+msgid "Die Schlüssel des Clients entstehen hier auf dem Rechner und werden nicht gespeichert. Im nächsten Schritt kommt die Vorschau der Änderung am Server."
+msgstr "クライアントの鍵はこのコンピューターで生成され、保存されません。次の手順でサーバーへの変更をプレビューします。"
+
+#: src/wggui/ui/dialogs.py:305
+msgid "Der Peer bekommt neue Schlüssel. Das bisherige Gerät verbindet sich erst wieder, wenn es den neuen QR-Code gescannt hat. Name, Adresse und übrige Einstellungen bleiben."
+msgstr "Peer の鍵を新しくします。これまでの端末は、新しい QR コードを読み取るまで再接続できません。名前、アドレス、その他の設定は維持されます。"
+
+#: src/wggui/ui/dialogs.py:310 src/wggui/ui/dialogs.py:558 src/wggui/ui/provision_dialogs.py:74
+msgid "Weiter…"
+msgstr "次へ…"
+
+#: src/wggui/ui/dialogs.py:368
+msgid "Änderung auf {plan_host_name} schreiben"
+msgstr "{plan_host_name} に変更を書き込む"
+
+#: src/wggui/ui/dialogs.py:378
+msgid "Vorschau – „+“ kommt dazu, „-“ fällt weg:"
+msgstr "プレビュー: 「+」は追加、「-」は削除:"
+
+#: src/wggui/ui/dialogs.py:382
+msgid "Änderung (Diff)"
+msgstr "変更（diff）"
+
+#: src/wggui/ui/dialogs.py:389
+msgid "Tunnel läuft weiter (wg syncconf)"
+msgstr "トンネルは実行を継続します（wg syncconf）"
+
+#: src/wggui/ui/dialogs.py:389
+msgid "nur Datei, Interface läuft nicht"
+msgstr "ファイルのみ。インターフェースは稼働していません"
+
+#: src/wggui/ui/dialogs.py:390
+msgid "Ablauf: Backup vorher · Rücknahme nach {seconds} s, falls keine Bestätigung ankommt · {runtime}"
+msgstr "手順: 先にバックアップ · {seconds} 秒以内に確認がなければロールバック · {runtime}"
+
+#: src/wggui/ui/dialogs.py:398 src/wggui/ui/dialogs.py:407
+msgid "Ablauf anzeigen"
+msgstr "手順を表示"
+
+#: src/wggui/ui/dialogs.py:407
+msgid "Ablauf ausblenden"
+msgstr "手順を隠す"
+
+#: src/wggui/ui/dialogs.py:415
+msgid "Auf {plan_host_name} schreiben"
+msgstr "{plan_host_name} に書き込む"
+
+#: src/wggui/ui/dialogs.py:443
+msgid "Client {name} – QR-Code"
+msgstr "クライアント {name} – QR コード"
+
+#: src/wggui/ui/dialogs.py:452
+msgid "QR-Code mit der Config für {name}"
+msgstr "{name} の設定を含む QR コード"
+
+#: src/wggui/ui/dialogs.py:453
+msgid "<span style=\"font-size:large; font-weight:600\">Jetzt mit der WireGuard-App scannen</span><br>In der App „Aus QR-Code erstellen“ wählen. Alternativ als Datei speichern."
+msgstr "<span style=\"font-size:large; font-weight:600\">今すぐ WireGuard アプリで読み取ってください</span><br>アプリで「QR コードから作成」を選択します。ファイルとして保存することもできます。"
+
+#: src/wggui/ui/dialogs.py:457
+msgid "Enthält den privaten Schlüssel des Clients und wird nicht gespeichert. Nach dem Schließen ist die Config weg."
+msgstr "クライアントの秘密鍵を含み、保存されません。閉じると設定は失われます。"
+
+#: src/wggui/ui/dialogs.py:462
+msgid "Als Datei &speichern…"
+msgstr "ファイルに保存…(&S)"
+
+#: src/wggui/ui/dialogs.py:481
+msgid "Nicht gespeichert: {reason}. Anderen Ordner wählen – die Config ist weiter nur hier im Fenster."
+msgstr "保存できませんでした: {reason}。別のフォルダーを選択してください。設定はまだこのウィンドウ内にのみあります。"
+
+#: src/wggui/ui/dialogs.py:490
+msgid "Client-Config speichern"
+msgstr "クライアント設定を保存"
+
+#: src/wggui/ui/dialogs.py:491
+msgid "WireGuard-Config (*.conf)"
+msgstr "WireGuard 設定 (*.conf)"
+
+#: src/wggui/ui/dialogs.py:496
+msgid "Config verwerfen?"
+msgstr "設定を破棄しますか？"
+
+#: src/wggui/ui/dialogs.py:497
+msgid "Die Config wurde nicht gespeichert. Nach dem Schließen ist der private Schlüssel weg.\n\nWurde der QR-Code schon gescannt?"
+msgstr "設定は保存されていません。閉じると秘密鍵は失われます。\n\nQR コードはすでに読み取りましたか？"
+
+#: src/wggui/ui/dialogs.py:522
+msgid "Peer bearbeiten – {title}"
+msgstr "Peer を編集 – {title}"
+
+#: src/wggui/ui/dialogs.py:525
+msgid "leer = Name unverändert lassen"
+msgstr "空欄の場合は名前を変更しません"
+
+#: src/wggui/ui/dialogs.py:527
+msgid "Adressen/Netze, die zu diesem Peer geroutet werden, durch Komma getrennt."
+msgstr "この Peer にルーティングするアドレスやネットワークを、コンマで区切って入力します。"
+
+#: src/wggui/ui/dialogs.py:540
+msgid "Peer-Details (unverändert)"
+msgstr "Peer の詳細（変更なし）"
+
+#: src/wggui/ui/dialogs.py:545
+msgid "Endpoint:"
+msgstr "Endpoint:"
+
+#: src/wggui/ui/dialogs.py:546
+msgid "Schlüssel und PresharedKey bleiben unverändert. Im nächsten Schritt kommt die Vorschau."
+msgstr "鍵と PresharedKey は変更しません。次の手順でプレビューを表示します。"
+
+#: src/wggui/ui/dialogs.py:581 src/wggui/ui/provision_dialogs.py:205
+msgid "AllowedIPs: {a} ist kein Netz."
+msgstr "AllowedIPs: {a} はネットワークではありません。"
+
+#: src/wggui/ui/dialogs.py:583
+msgid "AllowedIPs überschneiden sich mit {hit}."
+msgstr "AllowedIPs が {hit} と重複しています。"
+
+#: src/wggui/ui/dialogs.py:60
+msgid "Host bearbeiten"
+msgstr "ホストを編集"
+
+#: src/wggui/ui/dialogs.py:60
+msgid "Host hinzufügen"
+msgstr "ホストを追加"
+
+#: src/wggui/ui/dialogs.py:609
+msgid "Mit Server abgleichen – {title}"
+msgstr "サーバーと同期 – {title}"
+
+#: src/wggui/ui/dialogs.py:611
+msgid "Je Zeile die Richtung wählen. „In die App …“ ändert nur die App; alles, was den Server ändert, kommt danach gesammelt in eine Vorschau mit Backup und Rollback."
+msgstr "行ごとに反映先を選択してください。「アプリに反映」はアプリのみを変更します。サーバーへの変更はまとめてプレビューし、バックアップとロールバックを用意します。"
+
+#: src/wggui/ui/dialogs.py:615
+msgid "Peer"
+msgstr "Peer"
+
+#: src/wggui/ui/dialogs.py:615
+msgid "Abweichung"
+msgstr "相違点"
+
+#: src/wggui/ui/dialogs.py:615
+msgid "Aktion"
+msgstr "操作"
+
+#: src/wggui/ui/dialogs.py:629
+msgid "Aktion für {d_label}"
+msgstr "{d_label} の操作"
+
+#: src/wggui/ui/dialogs.py:66
+msgid "Login als user@host oder ein Alias aus ~/.ssh/config."
+msgstr "user@host または ~/.ssh/config のエイリアスでログインします。"
+
+#: src/wggui/ui/dialogs.py:661 src/wggui/ui/dialogs.py:662
+msgid "{n} Änderung"
+msgid_plural "{n} Änderungen"
+msgstr[0] "変更 {n} 件"
+
+#: src/wggui/ui/dialogs.py:663
+msgid "App: {app} · Server: {server}"
+msgstr "アプリ: {app} · サーバー: {server}"
+
+#: src/wggui/ui/dialogs.py:664
+msgid "Weiter zur Vorschau…"
+msgstr "プレビューへ進む…"
+
+#: src/wggui/ui/dialogs.py:673
+msgid "SSH-Public-Key – {name}"
+msgstr "SSH 公開鍵 – {name}"
+
+#: src/wggui/ui/dialogs.py:675
+msgid "<span style=\"font-size:large; font-weight:600\">Public Key auf dem Server eintragen</span><br>Diese Zeile gehört in <code>authorized_keys</code> des Login-Nutzers auf dem Server. Der private Schlüssel bleibt hier und wird nicht angezeigt."
+msgstr "<span style=\"font-size:large; font-weight:600\">公開鍵をサーバーに登録</span><br>この行をサーバーのログインユーザーの <code>authorized_keys</code> に追加してください。秘密鍵はこのコンピューターに残り、表示されません。"
+
+#: src/wggui/ui/dialogs.py:683
+msgid "Öffentlicher SSH-Schlüssel"
+msgstr "SSH 公開鍵"
+
+#: src/wggui/ui/dialogs.py:685
+msgid "Mit Passwort-Login einmal im Terminal: <code>ssh-copy-id -i {path}.pub {target}</code><br>Sonst die Zeile oben von Hand eintragen."
+msgstr "パスワードでログインできる場合、ターミナルで一度実行: <code>ssh-copy-id -i {path}.pub {target}</code><br>それ以外の場合は、上の行を手動で追加してください。"
+
+#: src/wggui/ui/dialogs.py:69
+msgid "Standard"
+msgstr "既定"
+
+#: src/wggui/ui/dialogs.py:690
+msgid "Public Key &kopieren"
+msgstr "公開鍵をコピー(&C)"
+
+#: src/wggui/ui/dialogs.py:70
+msgid "Standard: Port aus ~/.ssh/config, sonst 22."
+msgstr "既定: ~/.ssh/config のポート。指定がなければ 22。"
+
+#: src/wggui/ui/dialogs.py:72
+msgid "Befehle mit &sudo ausführen (Login ist nicht root)"
+msgstr "sudo でコマンドを実行する（root 以外でログイン）(&s)"
+
+#: src/wggui/ui/dialogs.py:74
+msgid "Nutzt sudo -n: Auf dem Host muss für diesen Nutzer sudo ohne Passwort (NOPASSWD) eingerichtet sein."
+msgstr "sudo -n を使用します。ホストでこのユーザーにパスワード不要の sudo（NOPASSWD）を設定してください。"
+
+#: src/wggui/ui/dialogs.py:77
+msgid "S&ystem (SSH-Agent, ssh-Config)"
+msgstr "システム（SSH エージェント、ssh 設定）(&y)"
+
+#: src/wggui/ui/dialogs.py:78
+msgid "Eigene Schlüssel&datei:"
+msgstr "独自の鍵ファイル(&f):"
+
+#: src/wggui/ui/dialogs.py:80
+msgid "/home/…/id_ed25519 (private Datei, nicht .pub)"
+msgstr "/home/…/id_ed25519（秘密鍵のファイル、.pub ではありません）"
+
+#: src/wggui/ui/dialogs.py:81
+msgid "Wählen…"
+msgstr "選択…"
+
+#: src/wggui/ui/dialogs.py:82
+msgid "Neu erzeugen…"
+msgstr "新規生成…"
+
+#: src/wggui/ui/dialogs.py:83
+msgid "Neues ed25519-Paar im Datenordner der App (ohne Passphrase). Den Public Key danach auf dem Server eintragen."
+msgstr "アプリのデータフォルダーに新しい ed25519 鍵ペアを作成します（パスフレーズなし）。その後、公開鍵をサーバーに登録してください。"
+
+#: src/wggui/ui/log_view.py:54 src/wggui/ui/main_window.py:345
+msgid "Protokoll"
+msgstr "ログ"
+
+#: src/wggui/ui/log_view.py:63
+msgid "Log-Datei: keine (nur Anzeige)"
+msgstr "ログファイル: なし（表示のみ）"
+
+#: src/wggui/ui/log_view.py:65
+msgid "Datenbank: {db_path}"
+msgstr "データベース: {db_path}"
+
+#: src/wggui/ui/log_view.py:70
+msgid "Log-Datei öffnen"
+msgstr "ログファイルを開く"
+
+#: src/wggui/ui/log_view.py:72
+msgid "Ordner öffnen"
+msgstr "フォルダーを開く"
+
+#: src/wggui/ui/log_view.py:76
+msgid "Anzeige leeren"
+msgstr "表示を消去"
+
+#: src/wggui/ui/main_window.py:1022 src/wggui/ui/main_window.py:1059
+msgid "Client hinzufügen"
+msgstr "クライアントを追加"
+
+#: src/wggui/ui/main_window.py:1023
+msgid "{iface}: Config-Datei oder Public Key nicht lesbar. Host neu lesen (F5) und Hinweise im Fenster prüfen."
+msgstr "{iface}: 設定ファイルまたは公開鍵を読み取れません。ホストを再読み込み（F5）し、ウィンドウ内の通知を確認してください。"
+
+#: src/wggui/ui/main_window.py:1040
+msgid "Die SSH-Verbindung zu {host_name} läuft über {iface} – also über den eigenen Zugang. Bricht sie ab, setzt {host_name} die Änderung nach {apply_ROLLBACK_SECONDS} s selbst zurück."
+msgstr "{host_name} への SSH 接続は {iface}、つまり現在の接続経路を使用しています。接続が切れた場合、{host_name} は {apply_ROLLBACK_SECONDS} 秒後に変更を自動で元に戻します。"
+
+#: src/wggui/ui/main_window.py:1047
+msgid "SaveConfig = true: wg-quick schreibt beim Stoppen den Laufzeitstand in die Datei. Der neue Peer ist dort enthalten, Kommentare können verloren gehen."
+msgstr "SaveConfig = true: 停止時に wg-quick が実行時の状態をファイルに書き込みます。新しい Peer は含まれますが、コメントは失われる可能性があります。"
+
+#: src/wggui/ui/main_window.py:1069
+msgid "{host_name}: Client {spec_name} angelegt"
+msgstr "{host_name}: クライアント {spec_name} を作成しました"
+
+#: src/wggui/ui/main_window.py:1074 src/wggui/ui/main_window.py:1175 src/wggui/ui/main_window.py:1337
+msgid "Schreibe auf"
+msgstr "書き込み先"
+
+#: src/wggui/ui/main_window.py:1087 src/wggui/ui/main_window.py:758
+msgid "Peer {v1}"
+msgstr "Peer {v1}"
+
+#: src/wggui/ui/main_window.py:1108
+msgid "{iface}: Config-Datei nicht lesbar. Hinweise im Fenster prüfen."
+msgstr "{iface}: 設定ファイルを読み取れません。ウィンドウ内の通知を確認してください。"
+
+#: src/wggui/ui/main_window.py:1127
+msgid "{host_name}/{iface}: keine Änderung nötig"
+msgstr "{host_name}/{iface}: 変更は不要です"
+
+#: src/wggui/ui/main_window.py:1130
+msgid "(Die Datei bleibt unverändert – wg syncconf lädt sie neu in die Laufzeit.)\n"
+msgstr "（ファイルは変更せず、wg syncconf が実行時の状態に再読み込みします。）\n"
+
+#: src/wggui/ui/main_window.py:1134
+msgid "Die SSH-Verbindung zu {host_name} läuft über {iface}. Betrifft die Änderung den eigenen Zugang, bricht sie ab – dann setzt {host_name} nach {apply_ROLLBACK_SECONDS} s alles selbst zurück."
+msgstr "{host_name} への SSH 接続は {iface} を使用しています。変更が現在の接続に影響すると接続が切れます。その場合、{host_name} は {apply_ROLLBACK_SECONDS} 秒後に変更を自動で元に戻します。"
+
+#: src/wggui/ui/main_window.py:1142
+msgid "SaveConfig = true: Beim Stoppen überschreibt wg-quick die Datei mit dem Laufzeitstand; gesperrte Peers und Kommentare gehen dann verloren."
+msgstr "SaveConfig = true: 停止時に wg-quick が実行時の状態でファイルを上書きします。その際、無効な Peer とコメントは失われます。"
+
+#: src/wggui/ui/main_window.py:1169
+msgid "{host_name}/{iface}: {action} – erledigt"
+msgstr "{host_name}/{iface}: {action} – 完了"
+
+#: src/wggui/ui/main_window.py:1180
+msgid "Der Peer steht nicht (mehr) in der Server-Datei. „Mit Server abgleichen…“ zeigt, was abweicht."
+msgstr "Peer はサーバーのファイルに存在しません。「サーバーと同期…」で相違点を確認できます。"
+
+#: src/wggui/ui/main_window.py:1196
+msgid "{v1} ändern"
+msgstr "{v1} を変更"
+
+#: src/wggui/ui/main_window.py:1198 src/wggui/ui/main_window.py:1188
+msgid "Peer bearbeiten"
+msgstr "Peer を編集"
+
+#: src/wggui/ui/main_window.py:121
+msgid "gesperrt"
+msgstr "無効"
+
+#: src/wggui/ui/main_window.py:1211
+msgid "{label} kann sich danach nicht mehr verbinden. Der Block bleibt auskommentiert in der Datei; „Peer entsperren…“ stellt ihn wieder her."
+msgstr "この操作後、{label} は接続できなくなります。ブロックはファイル内にコメントアウトした状態で残り、「Peer を有効化…」で復元できます。"
+
+#: src/wggui/ui/main_window.py:1214 src/wggui/ui/main_window.py:1204
+msgid "Peer sperren"
+msgstr "Peer を無効化"
+
+#: src/wggui/ui/main_window.py:122
+msgid "Gesperrt: in der Config auskommentiert (#wggui-off), kann sich nicht verbinden."
+msgstr "無効: 設定内でコメントアウトされています（#wggui-off）。接続できません。"
+
+#: src/wggui/ui/main_window.py:1225
+msgid "{label} wird aus der Datei gelöscht (das Backup bleibt auf dem Server). Der Client kann sich nicht mehr verbinden; seine Schlüssel lassen sich nicht wiederherstellen. Nur vorübergehend? Dann „Peer sperren…“."
+msgstr "{label} をファイルから削除します（バックアップはサーバーに残ります）。クライアントは接続できなくなり、鍵も復元できません。一時的に停止する場合は「Peer を無効化…」を使用してください。"
+
+#: src/wggui/ui/main_window.py:1229 src/wggui/ui/main_window.py:1220
+msgid "Peer entfernen"
+msgstr "Peer を削除"
+
+#: src/wggui/ui/main_window.py:1245
+msgid "{label} hat keine einzelne Adresse im VPN-Netz (z. B. Standort-Tunnel) – dafür gibt es keine Client-Config."
+msgstr "{label} には VPN ネットワーク内の単一アドレスがありません（拠点間トンネルなど）。クライアント設定は作成できません。"
+
+#: src/wggui/ui/main_window.py:125
+msgid "nicht geladen"
+msgstr "未読み込み"
+
+#: src/wggui/ui/main_window.py:1252
+msgid "Public Key des Servers nicht lesbar."
+msgstr "サーバーの公開鍵を読み取れません。"
+
+#: src/wggui/ui/main_window.py:126
+msgid "Peer steht in der Datei, ist im laufenden Interface aber nicht aktiv."
+msgstr "Peer はファイルにありますが、稼働中のインターフェースでは有効になっていません。"
+
+#: src/wggui/ui/main_window.py:1263
+msgid "{label} bekommt neue Schlüssel. Das bisherige Gerät verbindet sich erst wieder, wenn es den neuen QR-Code gescannt hat."
+msgstr "{label} の鍵を新しくします。これまでの端末は、新しい QR コードを読み取るまで再接続できません。"
+
+#: src/wggui/ui/main_window.py:127
+msgid "Interface läuft nicht oder wurde noch nicht gelesen."
+msgstr "インターフェースが稼働していないか、まだ読み込まれていません。"
+
+#: src/wggui/ui/main_window.py:1270
+msgid "{label}: neue Schlüssel ausstellen"
+msgstr "{label}: 新しい鍵を発行"
+
+#: src/wggui/ui/main_window.py:1272 src/wggui/ui/main_window.py:1237 src/wggui/ui/main_window.py:1244
+msgid "Neuen QR-Code ausstellen"
+msgstr "新しい QR コードを発行"
+
+#: src/wggui/ui/main_window.py:1283
+msgid "{host}: wireguard-tools sind schon installiert"
+msgstr "{host}: wireguard-tools はインストール済みです"
+
+#: src/wggui/ui/main_window.py:1288
+msgid "Keine automatische Installation für diese Distribution. Von Hand: {hint}"
+msgstr "このディストリビューションでは自動インストールを利用できません。手動で: {hint}"
+
+#: src/wggui/ui/main_window.py:129
+msgid "nie verbunden"
+msgstr "接続履歴なし"
+
+#: src/wggui/ui/main_window.py:129
+msgid "Noch kein Handshake seit dem Start des Interfaces."
+msgstr "インターフェースの起動後、まだハンドシェイクがありません。"
+
+#: src/wggui/ui/main_window.py:1295
+msgid "{host}: wireguard-tools installiert"
+msgstr "{host}: wireguard-tools をインストールしました"
+
+#: src/wggui/ui/main_window.py:1299
+msgid "Installiere auf"
+msgstr "インストール先"
+
+#: src/wggui/ui/main_window.py:131
+msgid "aktiv"
+msgstr "アクティブ"
+
+#: src/wggui/ui/main_window.py:131
+msgid "Handshake in den letzten 3 Minuten."
+msgstr "過去 3 分以内にハンドシェイクがありました。"
+
+#: src/wggui/ui/main_window.py:1319
+msgid "Neues Interface"
+msgstr "新しいインターフェース"
+
+#: src/wggui/ui/main_window.py:1319
+msgid "wireguard-tools fehlen – zuerst „wireguard-tools installieren…“."
+msgstr "wireguard-tools がありません。先に「wireguard-tools をインストール…」を実行してください。"
+
+#: src/wggui/ui/main_window.py:132
+msgid "offline"
+msgstr "オフライン"
+
+#: src/wggui/ui/main_window.py:132
+msgid "Letzter Handshake vor mehr als 3 Minuten: Peer vermutlich offline."
+msgstr "最後のハンドシェイクから 3 分以上経過しています。Peer はオフラインの可能性があります。"
+
+#: src/wggui/ui/main_window.py:1327
+msgid "{host}: Interface {name} angelegt – „Vom Server übernehmen…“ holt es in die App"
+msgstr "{host}: インターフェース {name} を作成しました。「サーバーから取り込む…」でアプリに追加できます"
+
+#: src/wggui/ui/main_window.py:1359 src/wggui/ui/main_window.py:1385 src/wggui/ui/main_window.py:1378
+msgid "Server-Tunnel anlegen"
+msgstr "サーバー間トンネルを作成"
+
+#: src/wggui/ui/main_window.py:1359
+msgid "Public Key dieses Interfaces unbekannt – zuerst „Vom Server übernehmen…“."
+msgstr "このインターフェースの公開鍵が不明です。先に「サーバーから取り込む…」を実行してください。"
+
+#: src/wggui/ui/main_window.py:1386
+msgid "Nur Seite A geschrieben – Seite B abgebrochen. Den Peer auf A ggf. wieder entfernen."
+msgstr "側 A のみ書き込みました。側 B はキャンセルされました。必要に応じて側 A のピアを削除してください。"
+
+#: src/wggui/ui/main_window.py:139
+msgid "Unbekannter Fehler"
+msgstr "不明なエラー"
+
+#: src/wggui/ui/main_window.py:1392
+msgid "Tunnel {a} ↔ {b} angelegt"
+msgstr "トンネル {a} ↔ {b} を作成しました"
+
+#: src/wggui/ui/main_window.py:1415
+msgid "{host}/{iface}: keine alten Backups (die neuesten {n} bleiben)"
+msgstr "{host}/{iface}: 古いバックアップはありません（最新の {n} 個は保持）"
+
+#: src/wggui/ui/main_window.py:1423
+msgid "{host}/{iface}: {n} Backup gelöscht"
+msgid_plural "{host}/{iface}: {n} Backups gelöscht"
+msgstr[0] "{host}/{iface}: バックアップを {n} 個削除しました"
+
+#: src/wggui/ui/main_window.py:1426
+msgid "Lösche auf"
+msgstr "削除中:"
+
+#: src/wggui/ui/main_window.py:1438
+msgid "{host_name}/{iface}: App, Datei und Laufzeit stimmen überein"
+msgstr "{host_name}/{iface}: アプリ、ファイル、実行時の状態が一致しています"
+
+#: src/wggui/ui/main_window.py:1454
+msgid "{host}/{iface}: {n} Änderung in die App übernommen"
+msgid_plural "{host}/{iface}: {n} Änderungen in die App übernommen"
+msgstr[0] "{host}/{iface}: 変更 {n} 件をアプリに取り込みました"
+
+#: src/wggui/ui/main_window.py:1462
+msgid "{n} Peer-Änderung aus dem Abgleich"
+msgid_plural "{n} Peer-Änderungen aus dem Abgleich"
+msgstr[0] "同期による Peer の変更 {n} 件"
+
+#: src/wggui/ui/main_window.py:1467
+msgid "Mit Server abgleichen"
+msgstr "サーバーと同期"
+
+#: src/wggui/ui/main_window.py:1480 src/wggui/ui/main_window.py:1287
+msgid "wireguard-tools installieren"
+msgstr "wireguard-tools をインストール"
+
+#: src/wggui/ui/main_window.py:1481
+msgid "Auf {host} ausführen?\n\n{command}"
+msgstr "{host} で実行しますか？\n\n{command}"
+
+#: src/wggui/ui/main_window.py:1482
+msgid "Installieren"
+msgstr "インストール"
+
+#: src/wggui/ui/main_window.py:1496
+msgid "Alte Backups aufräumen"
+msgstr "古いバックアップを整理"
+
+#: src/wggui/ui/main_window.py:1497
+msgid "Auf {host} {n} alte Sicherung löschen?"
+msgid_plural "Auf {host} {n} alte Sicherungen löschen?"
+msgstr[0] "{host} の古いバックアップ {n} 個を削除しますか?"
+
+#: src/wggui/ui/main_window.py:1500
+msgid "Es bleiben die neuesten {kept}. Die Config selbst ändert sich nicht."
+msgstr "最新の {kept} 個は保持されます。設定自体は変更されません。"
+
+#: src/wggui/ui/main_window.py:1502
+msgid "Löschen"
+msgstr "削除"
+
+#: src/wggui/ui/main_window.py:1508
+msgid "Host entfernen"
+msgstr "ホストを削除"
+
+#: src/wggui/ui/main_window.py:1509
+msgid "{host_name} mit allen Interfaces und Peers aus der App entfernen?\n\nAuf dem Server wird nichts geändert."
+msgstr "{host_name} とそのすべてのインターフェースおよび Peer をアプリから削除しますか？\n\nサーバーは変更されません。"
+
+#: src/wggui/ui/main_window.py:1511
+msgid "Entfernen"
+msgstr "削除"
+
+#: src/wggui/ui/main_window.py:153
+msgid "Verbindung testen oder Details im Protokoll ansehen"
+msgstr "接続をテストするか、ログで詳細を確認してください"
+
+#: src/wggui/ui/main_window.py:164
+msgid "Kein root-Zugriff: als root anmelden oder im Host „sudo“ einschalten (Host bearbeiten…)."
+msgstr "root 権限がありません。root としてログインするか、ホストの「sudo」を有効にしてください（ホストを編集…）。"
+
+#: src/wggui/ui/main_window.py:166
+msgid "wireguard-tools fehlen. Installieren: {info_install_hint}"
+msgstr "wireguard-tools がありません。インストール: {info_install_hint}"
+
+#: src/wggui/ui/main_window.py:196
+msgid "Hosts und Interfaces"
+msgstr "ホストとインターフェース"
+
+#: src/wggui/ui/main_window.py:211 src/wggui/ui/main_window.py:295
+msgid "Host hinzufügen…"
+msgstr "ホストを追加…"
+
+#: src/wggui/ui/main_window.py:218
+msgid "<h2>Noch kein Host eingetragen</h2>Ein Host ist ein Linux-Server mit WireGuard, den die App per SSH liest.<br>Mit <b>Host hinzufügen…</b> (Strg+N) beginnen."
+msgstr "<h2>ホストがまだ登録されていません</h2>ホストは、アプリが SSH 経由で読み取る WireGuard 搭載の Linux サーバーです。<br><b>ホストを追加…</b>（Ctrl+N）から始めてください。"
+
+#: src/wggui/ui/main_window.py:230
+msgid "Peers"
+msgstr "Peer"
+
+#: src/wggui/ui/main_window.py:243
+msgid "Peers filtern: Name, IP oder Schlüssel (Strg+F)"
+msgstr "Peer を絞り込む: 名前、IP、鍵（Ctrl+F）"
+
+#: src/wggui/ui/main_window.py:245 src/wggui/ui/main_window.py:342
+msgid "Peers filtern"
+msgstr "Peer を絞り込む"
+
+#: src/wggui/ui/main_window.py:271
+msgid "SSH läuft"
+msgstr "SSH 実行中"
+
+#: src/wggui/ui/main_window.py:296
+msgid "Linux-Server eintragen, den die App per SSH liest"
+msgstr "アプリが SSH 経由で読み取る Linux サーバーを追加"
+
+#: src/wggui/ui/main_window.py:297
+msgid "Host bearbeiten…"
+msgstr "ホストを編集…"
+
+#: src/wggui/ui/main_window.py:298
+msgid "Name, SSH-Ziel, Port oder sudo ändern"
+msgstr "名前、SSH 接続先、ポート、sudo を変更"
+
+#: src/wggui/ui/main_window.py:299
+msgid "Host entfernen…"
+msgstr "ホストを削除…"
+
+#: src/wggui/ui/main_window.py:301
+msgid "Host aus der App entfernen – auf dem Server ändert sich nichts"
+msgstr "アプリからホストを削除します。サーバーは変更されません"
+
+#: src/wggui/ui/main_window.py:303
+msgid "SSH-Public-Key anzeigen…"
+msgstr "SSH 公開鍵を表示…"
+
+#: src/wggui/ui/main_window.py:304
+msgid "Öffentlichen Teil des eigenen SSH-Schlüssels dieses Hosts anzeigen und kopieren (zum Eintragen auf dem Server)"
+msgstr "このホスト用 SSH 鍵の公開鍵を表示・コピー（サーバーへの登録用）"
+
+#: src/wggui/ui/main_window.py:306
+msgid "wireguard-tools installieren…"
+msgstr "wireguard-tools をインストール…"
+
+#: src/wggui/ui/main_window.py:307
+msgid "wireguard-tools mit dem Paketmanager des Servers installieren"
+msgstr "サーバーのパッケージマネージャーで wireguard-tools をインストール"
+
+#: src/wggui/ui/main_window.py:308
+msgid "Neues Interface…"
+msgstr "新しいインターフェース…"
+
+#: src/wggui/ui/main_window.py:309
+msgid "Neues WireGuard-Interface auf diesem Server anlegen – Schlüssel entsteht auf dem Server"
+msgstr "このサーバーに新しい WireGuard インターフェースを作成します。鍵はサーバー上で生成されます"
+
+#: src/wggui/ui/main_window.py:311
+msgid "Server-Tunnel anlegen…"
+msgstr "サーバー間トンネルを作成…"
+
+#: src/wggui/ui/main_window.py:312
+msgid "Tunnel zwischen diesem Interface und einem Interface auf einem anderen Server anlegen (beide Seiten)"
+msgstr "このインターフェースと別のサーバーのインターフェースとの間にトンネルを作成（両側）"
+
+#: src/wggui/ui/main_window.py:314
+msgid "Verbindung testen"
+msgstr "接続をテスト"
+
+#: src/wggui/ui/main_window.py:315
+msgid "SSH-Login, root/sudo und wireguard-tools prüfen"
+msgstr "SSH ログイン、root/sudo、wireguard-tools を確認"
+
+#: src/wggui/ui/main_window.py:316
+msgid "Aktualisieren"
+msgstr "更新"
+
+#: src/wggui/ui/main_window.py:317
+msgid "Status aller Hosts per SSH lesen"
+msgstr "すべてのホストの状態を SSH 経由で読み取る"
+
+#: src/wggui/ui/main_window.py:318
+msgid "Vom Server übernehmen…"
+msgstr "サーバーから取り込む…"
+
+#: src/wggui/ui/main_window.py:319
+msgid "Configs des Hosts in die App übernehmen – vorher Vorschau"
+msgstr "ホストの設定をプレビューしてからアプリに取り込む"
+
+#: src/wggui/ui/main_window.py:320
+msgid "Client hinzufügen…"
+msgstr "クライアントを追加…"
+
+#: src/wggui/ui/main_window.py:321
+msgid "Neuen Client (Handy, Laptop) an diesem Interface anlegen, mit QR-Code"
+msgstr "このインターフェースに新しいクライアント（スマートフォン、ノート PC）を作成し、QR コードを発行"
+
+#: src/wggui/ui/main_window.py:322
+msgid "Mit Server abgleichen…"
+msgstr "サーバーと同期…"
+
+#: src/wggui/ui/main_window.py:323
+msgid "Abweichungen App ↔ Server-Datei ↔ Laufzeit anzeigen, Richtung je Peer wählen"
+msgstr "アプリ ↔ サーバーファイル ↔ 実行時の相違点を表示し、Peer ごとに反映先を選択"
+
+#: src/wggui/ui/main_window.py:325
+msgid "Alte Backups aufräumen…"
+msgstr "古いバックアップを整理…"
+
+#: src/wggui/ui/main_window.py:326
+msgid "Ältere Sicherungen der Config auf dem Server löschen – die neuesten {n} bleiben"
+msgstr "サーバー上の古い設定のコピーを削除します（最新の {n} 個は保持）"
+
+#: src/wggui/ui/main_window.py:328
+msgid "Peer bearbeiten…"
+msgstr "Peer を編集…"
+
+#: src/wggui/ui/main_window.py:329
+msgid "Name, AllowedIPs oder Keepalive auf dem Server ändern – mit Vorschau"
+msgstr "サーバー上の名前、AllowedIPs、Keepalive をプレビューしてから変更"
+
+#: src/wggui/ui/main_window.py:330 src/wggui/ui/main_window.py:431
+msgid "Peer sperren…"
+msgstr "Peer を無効化…"
+
+#: src/wggui/ui/main_window.py:331
+msgid "Peer auf dem Server auskommentieren bzw. wieder freigeben"
+msgstr "サーバー上の Peer をコメントアウト、または再び有効化"
+
+#: src/wggui/ui/main_window.py:332
+msgid "Neuen QR-Code ausstellen…"
+msgstr "新しい QR コードを発行…"
+
+#: src/wggui/ui/main_window.py:333
+msgid "Neue Schlüssel für diesen Client und QR-Code – das alte Gerät muss neu scannen"
+msgstr "このクライアント用の新しい鍵と QR コードを発行。以前の端末は再読み取りが必要です"
+
+#: src/wggui/ui/main_window.py:335
+msgid "Peer entfernen…"
+msgstr "Peer を削除…"
+
+#: src/wggui/ui/main_window.py:337
+msgid "Peer aus der Server-Config löschen – mit Vorschau und Backup"
+msgstr "Peer をサーバー設定から削除。プレビューとバックアップあり"
+
+#: src/wggui/ui/main_window.py:339
+msgid "PublicKey kopieren"
+msgstr "PublicKey をコピー"
+
+#: src/wggui/ui/main_window.py:348
+msgid "Protokoll anzeigen (Strg+L)"
+msgstr "ログを表示（Ctrl+L）"
+
+#: src/wggui/ui/main_window.py:350
+msgid "Aktionen"
+msgstr "操作"
+
+#: src/wggui/ui/main_window.py:355
+msgid "Abgleichen"
+msgstr "同期"
+
+#: src/wggui/ui/main_window.py:359
+msgid "&Host"
+msgstr "ホスト(&H)"
+
+#: src/wggui/ui/main_window.py:362
+msgid "&Interface"
+msgstr "インターフェース(&I)"
+
+#: src/wggui/ui/main_window.py:364
+msgid "&Peer"
+msgstr "Peer(&P)"
+
+#: src/wggui/ui/main_window.py:366
+msgid "&Ansicht"
+msgstr "表示(&V)"
+
+#: src/wggui/ui/main_window.py:369
+msgid "Sprache"
+msgstr "言語"
+
+#: src/wggui/ui/main_window.py:380
+msgid "Automatisch aktualisieren (jede Minute)"
+msgstr "自動更新（1 分ごと）"
+
+#: src/wggui/ui/main_window.py:385
+msgid "Spalten Empfangen/Gesendet"
+msgstr "受信・送信列"
+
+#: src/wggui/ui/main_window.py:386
+msgid "Spalte PublicKey"
+msgstr "PublicKey 列"
+
+#: src/wggui/ui/main_window.py:410
+msgid "zuerst einen Host auswählen"
+msgstr "先にホストを選択してください"
+
+#: src/wggui/ui/main_window.py:418
+msgid "{v1} (Host nutzt das System – Schlüssel im SSH-Agent)"
+msgstr "{v1}（ホストはシステムを使用。鍵は SSH エージェント内）"
+
+#: src/wggui/ui/main_window.py:426
+msgid "zuerst einen Peer in der Tabelle auswählen"
+msgstr "先に表から Peer を選択してください"
+
+#: src/wggui/ui/main_window.py:427
+msgid "Peer steht nur in der Laufzeit, nicht in der Datei – „Mit Server abgleichen…“"
+msgstr "Peer は実行時の状態にのみ存在し、ファイルにはありません。「サーバーと同期…」を使用してください"
+
+#: src/wggui/ui/main_window.py:431
+msgid "Peer entsperren…"
+msgstr "Peer を有効化…"
+
+#: src/wggui/ui/main_window.py:455
+msgid "zuerst ein Interface auswählen"
+msgstr "先にインターフェースを選択してください"
+
+#: src/wggui/ui/main_window.py:457 src/wggui/ui/main_window.py:410
+msgid "wird gerade gelesen"
+msgstr "読み込み中"
+
+#: src/wggui/ui/main_window.py:459
+msgid "zuerst „Vom Server übernehmen…“"
+msgstr "先に「サーバーから取り込む…」を実行してください"
+
+#: src/wggui/ui/main_window.py:481 src/wggui/ui/main_window.py:372
+msgid "Systemsprache"
+msgstr "システムの言語"
+
+#: src/wggui/ui/main_window.py:482
+msgid "Sprache „{name}“ gilt ab dem nächsten Start der App."
+msgstr "言語「{name}」は、アプリの次回起動時から適用されます。"
+
+#: src/wggui/ui/main_window.py:544
+msgid "{host_name} – wird gelesen"
+msgstr "{host_name} – 読み込み中"
+
+#: src/wggui/ui/main_window.py:546
+msgid "{host_name} – Fehler"
+msgstr "{host_name} – エラー"
+
+#: src/wggui/ui/main_window.py:551
+msgid "{host_ssh_target} – wird gelesen"
+msgstr "{host_ssh_target} – 読み込み中"
+
+#: src/wggui/ui/main_window.py:553
+msgid "{host_ssh_target} – Fehler beim letzten Lesen"
+msgstr "{host_ssh_target} – 前回の読み込みでエラー"
+
+#: src/wggui/ui/main_window.py:576
+msgid "Steht nur auf dem Server. „Vom Server übernehmen…“ holt es in die App."
+msgstr "サーバー上にのみ存在します。「サーバーから取り込む…」でアプリに追加できます。"
+
+#: src/wggui/ui/main_window.py:623
+msgid "Links einen Host oder ein Interface auswählen."
+msgstr "左側でホストまたはインターフェースを選択してください。"
+
+#: src/wggui/ui/main_window.py:630 src/wggui/ui/main_window.py:633
+msgid "Protokoll anzeigen"
+msgstr "ログを表示"
+
+#: src/wggui/ui/main_window.py:642
+msgid "wird gerade gelesen …"
+msgstr "読み込み中 …"
+
+#: src/wggui/ui/main_window.py:644
+msgid "noch nicht gelesen – <b>Aktualisieren</b> (F5)"
+msgstr "未読み込み – <b>更新</b>（F5）"
+
+#: src/wggui/ui/main_window.py:645
+msgid "gelesen um {v1:%H:%M:%S}"
+msgstr "{v1:%H:%M:%S} に読み込み"
+
+#: src/wggui/ui/main_window.py:657
+msgid ", Port {host_port}"
+msgstr ", ポート {host_port}"
+
+#: src/wggui/ui/main_window.py:659
+msgid "System"
+msgstr "システム"
+
+#: src/wggui/ui/main_window.py:659
+msgid "noch nicht geprüft"
+msgstr "未確認"
+
+#: src/wggui/ui/main_window.py:66
+msgid "Name"
+msgstr "名前"
+
+#: src/wggui/ui/main_window.py:66
+msgid "Status"
+msgstr "状態"
+
+#: src/wggui/ui/main_window.py:66
+msgid "Endpoint"
+msgstr "Endpoint"
+
+#: src/wggui/ui/main_window.py:66
+msgid "Letzter Handshake"
+msgstr "最後のハンドシェイク"
+
+#: src/wggui/ui/main_window.py:660
+msgid "Zugriff"
+msgstr "アクセス"
+
+#: src/wggui/ui/main_window.py:660
+msgid "mit sudo"
+msgstr "sudo を使用"
+
+#: src/wggui/ui/main_window.py:660
+msgid "direkt als root"
+msgstr "root として直接接続"
+
+#: src/wggui/ui/main_window.py:661
+msgid "SSH-Schlüssel"
+msgstr "SSH 鍵"
+
+#: src/wggui/ui/main_window.py:662
+msgid "System (SSH-Agent, ssh-Config)"
+msgstr "システム（SSH エージェント、ssh 設定）"
+
+#: src/wggui/ui/main_window.py:664
+msgid "Verbindung"
+msgstr "接続"
+
+#: src/wggui/ui/main_window.py:664
+msgid "ok (getestet um {v1:%H:%M:%S})"
+msgstr "正常（{v1:%H:%M:%S} にテスト）"
+
+#: src/wggui/ui/main_window.py:668
+msgid "– (kein systemd)"
+msgstr "–（systemd なし）"
+
+#: src/wggui/ui/main_window.py:669
+msgid "Interfaces"
+msgstr "インターフェース"
+
+#: src/wggui/ui/main_window.py:669
+msgid "{n_interface_names} · aktive Units: {v2}"
+msgstr "{n_interface_names} · アクティブなユニット: {v2}"
+
+#: src/wggui/ui/main_window.py:67
+msgid "Empfangen"
+msgstr "受信"
+
+#: src/wggui/ui/main_window.py:67
+msgid "Gesendet"
+msgstr "送信"
+
+#: src/wggui/ui/main_window.py:672
+msgid "Wird gelesen …"
+msgstr "読み込み中 …"
+
+#: src/wggui/ui/main_window.py:674
+msgid "Fehler beim letzten Lesen"
+msgstr "前回の読み込みでエラー"
+
+#: src/wggui/ui/main_window.py:676
+msgid "Erreichbar"
+msgstr "到達可能"
+
+#: src/wggui/ui/main_window.py:678
+msgid "Noch nicht gelesen"
+msgstr "未読み込み"
+
+#: src/wggui/ui/main_window.py:697
+msgid "in der App"
+msgstr "アプリ内"
+
+#: src/wggui/ui/main_window.py:70
+msgid "nicht übernommen"
+msgstr "未取り込み"
+
+#: src/wggui/ui/main_window.py:703
+msgid "nur auf dem Server – mit „Vom Server übernehmen…“ in die App holen"
+msgstr "サーバー上のみ。「サーバーから取り込む…」でアプリに追加できます"
+
+#: src/wggui/ui/main_window.py:706
+msgid "nur Laufzeit, keine Config-Datei"
+msgstr "実行時のみ、設定ファイルなし"
+
+#: src/wggui/ui/main_window.py:712
+msgid "nur Laufzeit"
+msgstr "実行時のみ"
+
+#: src/wggui/ui/main_window.py:716
+msgid "Status unbekannt"
+msgstr "状態不明"
+
+#: src/wggui/ui/main_window.py:719
+msgid "Läuft · {active} von {total} Peers aktiv"
+msgstr "実行中 · Peer {total} 個中 {active} 個がアクティブ"
+
+#: src/wggui/ui/main_window.py:722
+msgid "Läuft nicht"
+msgstr "実行されていません"
+
+#: src/wggui/ui/main_window.py:729
+msgid "{n} Abweichung zwischen App, Server-Datei und Laufzeit."
+msgid_plural "{n} Abweichungen zwischen App, Server-Datei und Laufzeit."
+msgstr[0] "アプリ、サーバーファイル、実行時の状態の間に相違点が {n} 件あります。"
+
+#: src/wggui/ui/main_window.py:732
+msgid "Abgleichen…"
+msgstr "同期…"
+
+#: src/wggui/ui/main_window.py:734
+msgid " · App und Server stimmen überein"
+msgstr " · アプリとサーバーは一致しています"
+
+#: src/wggui/ui/main_window.py:735
+msgid "Adresse"
+msgstr "アドレス"
+
+#: src/wggui/ui/main_window.py:736
+msgid "Quelle"
+msgstr "ソース"
+
+#: src/wggui/ui/main_window.py:738
+msgid "kopieren"
+msgstr "コピー"
+
+#: src/wggui/ui/main_window.py:747
+msgid "SaveConfig = true: wg-quick überschreibt die Datei beim Stoppen mit dem Laufzeitstand – Kommentare, Namen und gesperrte Peers gehen dabei verloren. Empfehlung: Zeile entfernen."
+msgstr "SaveConfig = true: 停止時に wg-quick が実行時の状態でファイルを上書きします。その際、コメント、名前、無効な Peer が失われます。該当行を削除することを推奨します。"
+
+#: src/wggui/ui/main_window.py:778
+msgid "Weicht vom Server ab: {v1} – „Mit Server abgleichen…“"
+msgstr "サーバーと異なります: {v1}。「サーバーと同期…」を使用してください"
+
+#: src/wggui/ui/main_window.py:794
+msgid "PublicKey des Interfaces kopiert"
+msgstr "インターフェースの PublicKey をコピーしました"
+
+#: src/wggui/ui/main_window.py:800
+msgid "PublicKey kopiert"
+msgstr "PublicKey をコピーしました"
+
+#: src/wggui/ui/main_window.py:829
+msgid "{host_identity_file}.pub nicht gefunden oder nicht lesbar."
+msgstr "{host_identity_file}.pub が見つからないか、読み取れません。"
+
+#: src/wggui/ui/main_window.py:879
+msgid "Lese"
+msgstr "読み込み中"
+
+#: src/wggui/ui/main_window.py:913
+msgid "Fertig um {v1:%H:%M:%S}: "
+msgstr "{v1:%H:%M:%S} に完了: "
+
+#: src/wggui/ui/main_window.py:915
+msgid " – Details im Protokoll (Strg+L)"
+msgstr " – 詳細はログを参照（Ctrl+L）"
+
+#: src/wggui/ui/main_window.py:980
+msgid "{host_name}: App und Server stimmen überein"
+msgstr "{host_name}: アプリとサーバーは一致しています"
+
+#: src/wggui/ui/main_window.py:986
+msgid "{host}: {n} Änderung in die App übernommen"
+msgid_plural "{host}: {n} Änderungen in die App übernommen"
+msgstr[0] "{host}: 変更 {n} 件をアプリに取り込みました"
+
+#: src/wggui/ui/provision_dialogs.py:139
+msgid "Server-Tunnel anlegen – {side}"
+msgstr "サーバー間トンネルを作成 – {side}"
+
+#: src/wggui/ui/provision_dialogs.py:148
+msgid "Wie die Gegenseite diesen Server erreicht (Host:Port)."
+msgstr "相手側からこのサーバーに接続するためのアドレス (ホスト:ポート)。"
+
+#: src/wggui/ui/provision_dialogs.py:149
+msgid "Was zu diesem Server geroutet wird: seine Tunnel-Adresse und optional Netze dahinter, durch Komma getrennt."
+msgstr "このサーバーへルーティングする範囲: トンネルアドレスと、必要に応じてその背後のネットワークをコンマで区切って指定します。"
+
+#: src/wggui/ui/provision_dialogs.py:154
+msgid "Verbindung &offen halten (PersistentKeepalive 25 s)"
+msgstr "接続を維持(&K) (PersistentKeepalive 25 s)"
+
+#: src/wggui/ui/provision_dialogs.py:157
+msgid "&Gegenseite:"
+msgstr "相手側(&O):"
+
+#: src/wggui/ui/provision_dialogs.py:158
+msgid "Endpoint dieser Seite:"
+msgstr "こちら側の Endpoint:"
+
+#: src/wggui/ui/provision_dialogs.py:159
+msgid "AllowedIPs dieser Seite:"
+msgstr "こちら側の AllowedIPs:"
+
+#: src/wggui/ui/provision_dialogs.py:160
+msgid "Endpoint der Gegenseite:"
+msgstr "相手側の Endpoint:"
+
+#: src/wggui/ui/provision_dialogs.py:161
+msgid "AllowedIPs der Gegenseite:"
+msgstr "相手側の AllowedIPs:"
+
+#: src/wggui/ui/provision_dialogs.py:165
+msgid "Auf beiden Servern kommt je ein Peer-Block dazu – zwei Vorschauen nacheinander, jeweils mit Backup und Rollback. Firewall, Weiterleitung und Routen ändert die App nicht."
+msgstr "各サーバーにピア設定を 1 つずつ追加します。プレビューを順に 2 回表示し、それぞれバックアップとロールバックを行います。アプリはファイアウォール、転送、ルートを変更しません。"
+
+#: src/wggui/ui/provision_dialogs.py:192
+msgid "Kein weiteres Interface in der App – zuerst einen zweiten Server übernehmen."
+msgstr "アプリにほかのインターフェースがありません。先に 2 台目のサーバーを取り込んでください。"
+
+#: src/wggui/ui/provision_dialogs.py:195
+msgid "Gegenseite muss ein anderes Interface sein."
+msgstr "相手側には別のインターフェースを選んでください。"
+
+#: src/wggui/ui/provision_dialogs.py:46
+msgid "Neues Interface – {host}"
+msgstr "新しいインターフェース – {host}"
+
+#: src/wggui/ui/provision_dialogs.py:51
+msgid "Adresse des Servers im neuen VPN-Netz, mit Netzmaske."
+msgstr "新しい VPN ネットワーク内でのサーバーのアドレスを、ネットマスク付きで指定します。"
+
+#: src/wggui/ui/provision_dialogs.py:55
+msgid "Jetzt &starten"
+msgstr "今すぐ開始(&S)"
+
+#: src/wggui/ui/provision_dialogs.py:57
+msgid "Beim &Booten starten (systemd)"
+msgstr "起動時に開始(&b) (systemd)"
+
+#: src/wggui/ui/provision_dialogs.py:61
+msgid "&Name:"
+msgstr "名前(&N):"
+
+#: src/wggui/ui/provision_dialogs.py:62
+msgid "&Adresse:"
+msgstr "アドレス(&A):"
+
+#: src/wggui/ui/provision_dialogs.py:63
+msgid "&ListenPort:"
+msgstr "ListenPort(&L):"
+
+#: src/wggui/ui/provision_dialogs.py:66
+msgid "Der private Schlüssel entsteht auf dem Server und verlässt ihn nie. Firewall und Weiterleitung ändert die App nicht – den UDP-Port {port} ggf. selbst freigeben."
+msgstr "秘密鍵はサーバー上で生成され、外部には送られません。アプリはファイアウォールと転送を変更しません。必要に応じて UDP ポート {port} を開放してください。"
+
+#: src/wggui/ui/widgets.py:91
+msgid "Fehler"
+msgstr "エラー"
+
+#: src/wggui/ui/widgets.py:91
+msgid "Hinweis"
+msgstr "通知"
+
+#: src/wggui/ui/widgets.py:91
+msgid "Information"
+msgstr "情報"

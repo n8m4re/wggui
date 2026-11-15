@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+# Disposable SSH keys and known_hosts for integration tests
+tests/integration/_tmp/
+*.db
+
+# Flatpak build
+build-flatpak/
+.flatpak-builder/
+build-flatpak.log

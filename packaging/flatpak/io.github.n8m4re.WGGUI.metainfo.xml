@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AppStream metadata (freedesktop.org AppStream, “Desktop Applications”) -->
+<component type="desktop-application">
+  <id>io.github.n8m4re.WGGUI</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>WGGUI</name>
+  <summary>Manage WireGuard® servers over SSH</summary>
+  <summary xml:lang="de">WireGuard®-Server per SSH verwalten</summary>
+  <developer id="com.github.n8m4re">
+    <name>m8m4re</name>
+  </developer>
+  <description>
+    <p>Desktop app for Linux that reads and manages WireGuard® interfaces on Linux servers over SSH: status and
+    handshakes, new clients with QR code, editing, disabling and removing peers, and comparing app, server file
+    and runtime.</p>
+    <p>Every change on a server shows a diff first and runs with a backup and an automatic rollback timer.
+    Server private keys and preshared keys never leave the server.</p>
+    <p>WireGuard is a registered trademark of Jason A. Donenfeld. WGGUI is an independent project and is not
+    affiliated with or endorsed by the WireGuard project.</p>
+  </description>
+  <launchable type="desktop-id">io.github.n8m4re.WGGUI.desktop</launchable>
+  <url type="homepage">https://github.com/n8m4re/wggui</url>
+  <url type="bugtracker">https://github.com/n8m4re/wggui/issues</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Monitor interfaces, peers, and connection status</caption>
+      <image>https://raw.githubusercontent.com/n8m4re/wggui/main/docs/images/main-window.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Create a client with routing and connection options</caption>
+      <image>https://raw.githubusercontent.com/n8m4re/wggui/main/docs/images/add-client.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Review server changes before applying them</caption>
+      <image>https://raw.githubusercontent.com/n8m4re/wggui/main/docs/images/preview.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Add a client by scanning its QR code</caption>
+      <image>https://raw.githubusercontent.com/n8m4re/wggui/main/docs/images/qr-code.png</image>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.1.0" date="2026-11-15"/>
+  </releases>
+</component>

@@ -1,0 +1,46 @@
+# Flatpak manifest for wireguard-gui
+# Sources: docs.flatpak.org (Manifests, Sandbox Permissions), github.com/flathub/io.qt.PySide.BaseApp (README)
+# Build: scripts/flatpak-build.sh   (details: docs/flatpak.md)
+id: io.github.n8m4re.WGGUI
+runtime: org.kde.Platform
+runtime-version: '6.11'
+sdk: org.kde.Sdk
+base: io.qt.PySide.BaseApp      # PySide6 6.11 for KDE runtime 6.11 (official Base App)
+base-version: '6.11'
+command: wggui
+build-options:
+  env:
+    BASEAPP_REMOVE_WEBENGINE: '1'   # app does not need WebEngine; reduces size
+    BASEAPP_DISABLE_NUMPY: '1'
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh       # required by Base App README; removes development files
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --share=network               # SSH access to servers
+  - --socket=ssh-auth             # SSH agent (default “System”)
+  - --filesystem=~/.ssh:ro        # read-only ssh config, known_hosts, and user keys
+modules:
+  - python3-deps.json             # wheels for cryptography, cffi, pycparser, segno from uv.lock (scripts/flatpak_deps.py)
+
+  - name: wggui
+    buildsystem: simple
+    build-commands:
+      # No build backend (hatchling is absent from the runtime): copy package directly to site-packages
+      - mkdir -p ${FLATPAK_DEST}/lib/python3.13/site-packages
+      - cp -r src/wggui ${FLATPAK_DEST}/lib/python3.13/site-packages/
+      - install -Dm755 packaging/flatpak/wggui.sh ${FLATPAK_DEST}/bin/wggui
+      - install -Dm644 packaging/flatpak/${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      - install -Dm644 packaging/flatpak/${FLATPAK_ID}.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+      - install -Dm644 packaging/flatpak/${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
+    sources:
+      - type: dir
+        path: ../..
+        skip:
+          - .venv
+          - .git
+          - tests
+          - .flatpak-builder
+          - build-flatpak

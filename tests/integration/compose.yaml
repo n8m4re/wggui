@@ -1,0 +1,45 @@
+# Targets for `uv run pytest -m integration`; tests start and remove them.
+# Bind to 127.0.0.1 only; login requires the disposable key in _tmp/.
+name: wggui-it
+x-target: &target
+  cap_add:
+    - NET_ADMIN  # wg-quick up in the container's network namespace
+  devices:
+    - /dev/net/tun:/dev/net/tun  # for wireguard-go if the kernel module is absent; never load it on the host
+services:
+  debian:
+    <<: *target
+    build: {context: ., dockerfile: targets/debian.Dockerfile}
+    image: wggui-it-debian:latest
+    ports: ["127.0.0.1:22211:22"]
+    volumes: ["./_tmp/id_test.pub:/etc/ssh/authorized_keys/root:ro,z"]
+  ubuntu:
+    <<: *target
+    build: {context: ., dockerfile: targets/ubuntu.Dockerfile}
+    image: wggui-it-ubuntu:latest
+    ports: ["127.0.0.1:22212:22"]
+    volumes: ["./_tmp/id_test.pub:/etc/ssh/authorized_keys/admin:ro,z"]
+  fedora:
+    <<: *target
+    build: {context: ., dockerfile: targets/fedora.Dockerfile}
+    image: wggui-it-fedora:latest
+    ports: ["127.0.0.1:22213:22"]
+    volumes: ["./_tmp/id_test.pub:/etc/ssh/authorized_keys/root:ro,z"]
+  alpine:
+    <<: *target
+    build: {context: ., dockerfile: targets/alpine.Dockerfile}
+    image: wggui-it-alpine:latest
+    ports: ["127.0.0.1:22214:22"]
+    volumes: ["./_tmp/id_test.pub:/etc/ssh/authorized_keys/root:ro,z"]
+  alma9:
+    <<: *target
+    build: {context: ., dockerfile: targets/alma9.Dockerfile}
+    image: wggui-it-alma9:latest
+    ports: ["127.0.0.1:22215:22"]
+    volumes: ["./_tmp/id_test.pub:/etc/ssh/authorized_keys/root:ro,z"]
+  alma10:
+    <<: *target
+    build: {context: ., dockerfile: targets/alma10.Dockerfile}
+    image: wggui-it-alma10:latest
+    ports: ["127.0.0.1:22216:22"]
+    volumes: ["./_tmp/id_test.pub:/etc/ssh/authorized_keys/admin:ro,z"]

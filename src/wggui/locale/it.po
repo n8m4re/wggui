@@ -1,0 +1,1776 @@
+msgid ""
+msgstr ""
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/wggui/apply.py:136
+msgid "Die Config wurde seit dem Lesen geändert – nichts geschrieben. Neu lesen (F5) und erneut versuchen."
+msgstr "La configurazione è cambiata dopo la lettura: nessuna modifica scritta. Ricaricare (F5) e riprovare."
+
+#: src/wggui/apply.py:137
+msgid "wg syncconf fehlgeschlagen – die alte Config wurde wiederhergestellt."
+msgstr "wg syncconf non riuscito: è stata ripristinata la configurazione precedente."
+
+#: src/wggui/apply.py:138
+msgid "Keine offene Änderung – der Rollback ist vermutlich schon gelaufen."
+msgstr "Nessuna modifica in sospeso: il ripristino è probabilmente già avvenuto."
+
+#: src/wggui/apply.py:139 src/wggui/provision.py:105
+msgid "Auf dem Host fehlt setsid – ohne Rollback-Timer wird nichts geschrieben."
+msgstr "Sul server manca setsid: senza un timer di ripristino non viene scritto nulla."
+
+#: src/wggui/apply.py:140
+msgid "Neue Config nicht erzeugt (Peer nicht gefunden?) – nichts geändert."
+msgstr "Nuova configurazione non creata (peer non trovato?): nessuna modifica."
+
+#: src/wggui/apply.py:177
+msgid "Prüfsumme der Config nicht lesbar"
+msgstr "Impossibile leggere il checksum della configurazione"
+
+#: src/wggui/apply.py:202
+msgid "Peer-Block anhängen"
+msgstr "Aggiungi blocco peer"
+
+#: src/wggui/apply.py:213
+msgid "wg syncconf: laufender Tunnel übernimmt die Änderung, bestehende Verbindungen bleiben"
+msgstr "wg syncconf: il tunnel attivo applica la modifica senza interrompere le connessioni esistenti"
+
+#: src/wggui/apply.py:214
+msgid "Interface läuft nicht: nur die Datei wird geändert, gilt beim nächsten Start"
+msgstr "L'interfaccia non è attiva: viene modificato solo il file; la modifica avrà effetto al prossimo avvio"
+
+#: src/wggui/apply.py:216
+msgid "Prüfen, ob {conf_path} seit dem Lesen unverändert ist"
+msgstr "Verifica che {conf_path} non sia cambiato dopo la lettura"
+
+#: src/wggui/apply.py:217
+msgid "Backup: {backup_path}"
+msgstr "Backup: {backup_path}"
+
+#: src/wggui/apply.py:218
+msgid "Rollback-Timer: ohne Bestätigung nach {rollback_seconds} s Backup zurückspielen"
+msgstr "Timer di ripristino: ripristina il backup dopo {rollback_seconds} s senza conferma"
+
+#: src/wggui/apply.py:220
+msgid "{action}: {conf_path} (neue Datei wird vorher geprüft)"
+msgstr "{action}: {conf_path} (il nuovo file viene prima verificato)"
+
+#: src/wggui/apply.py:223
+msgid "Bestätigen (neuer SSH-Aufruf) – erst dann bleibt die Änderung"
+msgstr "Conferma (nuova connessione SSH): solo allora la modifica diventa definitiva"
+
+#: src/wggui/apply.py:231
+msgid "interner Fehler: Plan unvollständig"
+msgstr "errore interno: piano incompleto"
+
+#: src/wggui/apply.py:233
+msgid "Auf dem Host fehlt setsid (util-linux) – ohne Rollback-Timer schreibt die App nicht."
+msgstr "Sul server manca setsid (util-linux): senza un timer di ripristino l'app non scrive nulla."
+
+#: src/wggui/apply.py:235
+msgid "Auf dem Host fehlt wg-quick – der laufende Tunnel kann nicht aktualisiert werden."
+msgstr "Sul server manca wg-quick: impossibile aggiornare il tunnel attivo."
+
+#: src/wggui/apply.py:242
+msgid "Plan unvollständig"
+msgstr "Piano incompleto"
+
+#: src/wggui/apply.py:294
+msgid "Geschrieben, aber nicht bestätigt: {err}\n→ {plan_host_name} spielt nach {plan_rollback_seconds} s das Backup {plan_backup_path} zurück. Danach neu lesen und erneut versuchen."
+msgstr "Modifica scritta ma non confermata: {err}\n→ {plan_host_name} ripristinerà il backup {plan_backup_path} dopo {plan_rollback_seconds} s. Poi ricaricare e riprovare."
+
+#: src/wggui/client.py:102
+msgid "Adresse {ip} ist schon vergeben."
+msgstr "L'indirizzo {ip} è già in uso."
+
+#: src/wggui/client.py:110
+msgid "Name: 1–40 Zeichen, Buchstaben, Ziffern, Leerzeichen und . _ @ + -"
+msgstr "Nome: da 1 a 40 caratteri; lettere, cifre, spazi e . _ @ + -"
+
+#: src/wggui/client.py:118
+msgid "Endpoint: Hostname:Port, z. B. vpn.example.org:51820"
+msgstr "Endpoint: nomehost:porta, ad es. vpn.example.org:51820"
+
+#: src/wggui/client.py:128
+msgid "DNS: {v} ist keine IP-Adresse."
+msgstr "DNS: {v} non è un indirizzo IP."
+
+#: src/wggui/client.py:148 src/wggui/edit.py:178
+msgid "ungültiger PublicKey"
+msgstr "PublicKey non valido"
+
+#: src/wggui/client.py:85
+msgid "Adresse fehlt."
+msgstr "Indirizzo mancante."
+
+#: src/wggui/client.py:93
+msgid "Adresse {text}: keine gültige IP-Adresse."
+msgstr "Indirizzo {text}: indirizzo IP non valido."
+
+#: src/wggui/client.py:96
+msgid "Adresse {text}: nur eine einzelne Adresse (/{ip_max_prefixlen})."
+msgstr "Indirizzo {text}: è ammesso un solo indirizzo (/{ip_max_prefixlen})."
+
+#: src/wggui/client.py:99
+msgid "Adresse {ip} liegt nicht im Netz des Interfaces ({v2})."
+msgstr "L'indirizzo {ip} non appartiene alla rete dell'interfaccia ({v2})."
+
+#: src/wggui/db.py:158
+msgid "Name: Buchstaben, Ziffern, . _ - (max. 63 Zeichen)"
+msgstr "Nome: lettere, cifre, . _ - (max 63 caratteri)"
+
+#: src/wggui/db.py:160
+msgid "SSH-Ziel: z. B. root@server.example.org oder ein Alias aus ~/.ssh/config"
+msgstr "Destinazione SSH: ad es. root@server.example.org o un alias di ~/.ssh/config"
+
+#: src/wggui/db.py:162
+msgid "Port: 1–65535"
+msgstr "Porta: 1–65535"
+
+#: src/wggui/db.py:183
+msgid "Datenbank ist neuer (Version {version}) als die App ({SCHEMA_VERSION})"
+msgstr "Il database è più recente (versione {version}) dell'app ({SCHEMA_VERSION})"
+
+#: src/wggui/db.py:274 src/wggui/db.py:278
+msgid "neu"
+msgstr "nuovo"
+
+#: src/wggui/db.py:275
+msgid "{v1}, {n_peers} Peers"
+msgstr "{v1}, {n_peers} peer"
+
+#: src/wggui/db.py:276
+msgid "ohne Adresse"
+msgstr "senza indirizzo"
+
+#: src/wggui/db.py:278
+msgid "Peer {v1} ({name})"
+msgstr "Peer {v1} ({name})"
+
+#: src/wggui/db.py:284
+msgid "Adresse: {v1} → {v2}"
+msgstr "Indirizzo: {v1} → {v2}"
+
+#: src/wggui/db.py:286
+msgid "ListenPort: {old_listen_port} → {conf_listen_port}"
+msgstr "ListenPort: {old_listen_port} → {conf_listen_port}"
+
+#: src/wggui/db.py:289
+msgid "PublicKey geändert"
+msgstr "PublicKey modificato"
+
+#: src/wggui/db.py:291
+msgid "weitere Optionen (DNS, MTU, PostUp …)"
+msgstr "altre opzioni (DNS, MTU, PostUp …)"
+
+#: src/wggui/db.py:293 src/wggui/db.py:326
+msgid "geändert"
+msgstr "modificato"
+
+#: src/wggui/db.py:296 src/wggui/db.py:330
+msgid "entfernt"
+msgstr "rimosso"
+
+#: src/wggui/db.py:296 src/wggui/db.py:274 src/wggui/db.py:293
+msgid "Interface {name}"
+msgstr "Interfaccia {name}"
+
+#: src/wggui/db.py:297 src/wggui/db.py:332
+msgid "auf dem Server nicht mehr vorhanden"
+msgstr "non più presente sul server"
+
+#: src/wggui/db.py:306
+msgid "Peer {name} ({iface})"
+msgstr "Peer {name} ({iface})"
+
+#: src/wggui/db.py:312
+msgid "Name: {v1} → {p_name}"
+msgstr "Nome: {v1} → {p_name}"
+
+#: src/wggui/db.py:314
+msgid "AllowedIPs: {v1} → {v2}"
+msgstr "AllowedIPs: {v1} → {v2}"
+
+#: src/wggui/db.py:316
+msgid "Endpoint: {v1} → {v2}"
+msgstr "Endpoint: {v1} → {v2}"
+
+#: src/wggui/db.py:318
+msgid "Keepalive: {v1} → {v2}"
+msgstr "Keepalive: {v1} → {v2}"
+
+#: src/wggui/db.py:322 src/wggui/sync.py:74
+msgid "weitere Optionen"
+msgstr "altre opzioni"
+
+#: src/wggui/db.py:330
+msgid "Peer {v1} ({iface_name})"
+msgstr "Peer {v1} ({iface_name})"
+
+#: src/wggui/discover.py:106
+msgid "Paket wireguard-tools über den Paketmanager installieren"
+msgstr "Installare il pacchetto wireguard-tools con il gestore dei pacchetti"
+
+#: src/wggui/discover.py:180
+msgid "Kein root-Zugriff – /etc/wireguard ist so nicht lesbar. Als root anmelden oder beim Host „sudo verwenden“ einschalten (braucht NOPASSWD)."
+msgstr "Accesso root assente: impossibile leggere /etc/wireguard in questo modo. Accedere come root oppure abilitare «Usa sudo» per il server (richiede NOPASSWD)."
+
+#: src/wggui/discover.py:185
+msgid "wireguard-tools nicht installiert – auf dem Host: {info_install_hint}"
+msgstr "wireguard-tools non è installato sul server. {info_install_hint}"
+
+#: src/wggui/discover.py:191
+msgid "Datei {name}.conf übersprungen (ungültiger Interface-Name)"
+msgstr "File {name}.conf ignorato (nome dell'interfaccia non valido)"
+
+#: src/wggui/discover.py:198
+msgid "{name}.conf nicht lesbar: {err}"
+msgstr "Impossibile leggere {name}.conf: {err}"
+
+#: src/wggui/discover.py:209
+msgid "Laufzeitdaten (wg show) nicht lesbar: {err}"
+msgstr "Impossibile leggere i dati di esecuzione (wg show): {err}"
+
+#: src/wggui/discover.py:217
+msgid "{name}: SaveConfig = true – wg-quick überschreibt die Datei beim Stoppen"
+msgstr "{name}: SaveConfig = true: wg-quick sovrascrive il file all'arresto"
+
+#: src/wggui/discover.py:220
+msgid "{name}: Config vorhanden, Interface läuft nicht"
+msgstr "{name}: configurazione presente, interfaccia non attiva"
+
+#: src/wggui/discover.py:223
+msgid "{name}: läuft, aber keine Datei in {WG_DIR} (anderes Werkzeug?)"
+msgstr "{name}: attiva, ma nessun file in {WG_DIR} (altro strumento?)"
+
+#: src/wggui/edit.py:176
+msgid "unbekannte Operation {op!r}"
+msgstr "operazione sconosciuta {op!r}"
+
+#: src/wggui/edit.py:182 src/wggui/provision.py:248 src/wggui/ui/dialogs.py:576
+msgid "AllowedIPs fehlen."
+msgstr "AllowedIPs mancanti."
+
+#: src/wggui/edit.py:184
+msgid "Keepalive: 1–65535 Sekunden oder leer."
+msgstr "Keepalive: 1–65535 secondi oppure vuoto."
+
+#: src/wggui/edit.py:186
+msgid "Zustand: on oder off"
+msgstr "Stato: on oppure off"
+
+#: src/wggui/edit.py:189
+msgid "neuer PublicKey ungültig"
+msgstr "nuovo PublicKey non valido"
+
+#: src/wggui/edit.py:191
+msgid "ungültiger PresharedKey"
+msgstr "PresharedKey non valido"
+
+#: src/wggui/edit.py:202
+msgid "Pro Peer nur eine Änderung je Plan."
+msgstr "Una sola modifica per peer in ogni piano."
+
+#: src/wggui/edit.py:218
+msgid "Peer nicht gefunden – „Mit Server abgleichen…“ zeigt, was abweicht."
+msgstr "Peer non trovato: «Sincronizza con il server…» mostra le differenze."
+
+#: src/wggui/edit.py:219
+msgid "Peer existiert schon (Schlüssel bereits vergeben)."
+msgstr "Il peer esiste già (chiave già in uso)."
+
+#: src/wggui/fmt.py:25
+msgid "nie"
+msgstr "mai"
+
+#: src/wggui/fmt.py:28
+msgid "vor {v1} s"
+msgstr "{v1} s fa"
+
+#: src/wggui/fmt.py:30
+msgid "vor {v1} min"
+msgstr "{v1} min fa"
+
+#: src/wggui/fmt.py:32
+msgid "vor {v1} h"
+msgstr "{v1} h fa"
+
+#: src/wggui/fmt.py:33
+msgid "vor {v1} d"
+msgstr "{v1} g fa"
+
+#: src/wggui/provision.py:103
+msgid "Interface existiert schon – anderen Namen wählen."
+msgstr "L'interfaccia esiste già – scegli un altro nome."
+
+#: src/wggui/provision.py:104
+msgid "Interface ließ sich nicht starten – Datei wieder entfernt."
+msgstr "Impossibile avviare l'interfaccia – il file è stato rimosso."
+
+#: src/wggui/provision.py:106
+msgid "wireguard-tools fehlen auf dem Host – zuerst installieren."
+msgstr "wireguard-tools non è presente sul server – installalo prima."
+
+#: src/wggui/provision.py:131
+msgid "Neues Interface {name} anlegen"
+msgstr "Crea la nuova interfaccia {name}"
+
+#: src/wggui/provision.py:141
+msgid "(wird auf dem Server erzeugt, verlässt ihn nie)"
+msgstr "(generata sul server, non lo lascia mai)"
+
+#: src/wggui/provision.py:144
+msgid "Schlüssel auf dem Server erzeugen (wg genkey)"
+msgstr "Genera la chiave sul server (wg genkey)"
+
+#: src/wggui/provision.py:145
+msgid "Datei {path} anlegen (Rechte 0600)"
+msgstr "Crea il file {path} (permessi 0600)"
+
+#: src/wggui/provision.py:146
+msgid "Rollback-Timer: ohne Bestätigung nach {seconds} s Interface stoppen und Datei entfernen"
+msgstr "Timer di ripristino: senza conferma, arresta l'interfaccia e rimuovi il file dopo {seconds} s"
+
+#: src/wggui/provision.py:149
+msgid "Beim Booten starten und jetzt starten (systemctl enable --now wg-quick@{name}; ohne systemd: wg-quick up)"
+msgstr "Avvia ora e all'accensione (systemctl enable --now wg-quick@{name}; senza systemd: wg-quick up)"
+
+#: src/wggui/provision.py:152
+msgid "Jetzt starten (wg-quick up)"
+msgstr "Avvia ora (wg-quick up)"
+
+#: src/wggui/provision.py:153
+msgid "Bestätigen (neuer SSH-Aufruf) – erst dann bleibt das Interface"
+msgstr "Conferma (nuova connessione SSH) – solo allora l'interfaccia viene mantenuta"
+
+#: src/wggui/provision.py:161
+msgid "Name: Buchstaben, Ziffern, _ = + . - (max. 15 Zeichen)."
+msgstr "Nome: lettere, cifre, _ = + . - (max. 15 caratteri)."
+
+#: src/wggui/provision.py:163
+msgid "Interface {name} gibt es auf diesem Host schon."
+msgstr "L'interfaccia {name} esiste già su questo server."
+
+#: src/wggui/provision.py:167
+msgid "Adresse: z. B. 10.98.1.1/24"
+msgstr "Indirizzo: es. 10.98.1.1/24"
+
+#: src/wggui/provision.py:169
+msgid "Adresse: mit Netzmaske angeben, z. B. 10.98.1.1/24"
+msgstr "Indirizzo: includi la maschera di rete, es. 10.98.1.1/24"
+
+#: src/wggui/provision.py:171
+msgid "ListenPort: 1–65535"
+msgstr "ListenPort: 1–65535"
+
+#: src/wggui/provision.py:174
+msgid "ListenPort {port} nutzt schon {other}."
+msgstr "ListenPort {port} è già usata da {other}."
+
+#: src/wggui/provision.py:181
+msgid "Netz überschneidet sich mit {other} ({net})."
+msgstr "La rete si sovrappone a {other} ({net})."
+
+#: src/wggui/provision.py:218
+msgid "Public Key des neuen Interfaces nicht lesbar."
+msgstr "Impossibile leggere la chiave pubblica della nuova interfaccia."
+
+#: src/wggui/provision.py:265
+msgid "(neu, wird nicht angezeigt)"
+msgstr "(nuova, non visualizzata)"
+
+#: src/wggui/provision.py:269
+msgid "Tunnel zu {host}/{iface} anlegen"
+msgstr "Crea un tunnel verso {host}/{iface}"
+
+#: src/wggui/provision.py:46
+msgid "Für diese Distribution gibt es keine automatische Installation."
+msgstr "Installazione automatica non disponibile per questa distribuzione."
+
+#: src/wggui/provision.py:49
+msgid "wireguard-tools sind nach der Installation nicht verfügbar."
+msgstr "wireguard-tools non è disponibile dopo l'installazione."
+
+#: src/wggui/remote.py:36
+msgid "Anmeldung abgelehnt: Schlüssel nicht im SSH-Agent oder nicht in authorized_keys des Zielnutzers."
+msgstr "Accesso rifiutato: la chiave non è nell'agente SSH o in authorized_keys dell'utente di destinazione."
+
+#: src/wggui/remote.py:38
+msgid "Host-Key unbekannt oder geändert: einmal im Terminal `ssh <Ziel>` ausführen und den Fingerabdruck prüfen."
+msgstr "Chiave host sconosciuta o modificata: eseguire una volta `ssh <destinazione>` nel terminale e verificare l'impronta."
+
+#: src/wggui/remote.py:40
+msgid "Host-Key hat sich geändert – erst prüfen, dann den alten Eintrag mit `ssh-keygen -R <host>` entfernen."
+msgstr "La chiave host è cambiata: verificarla prima di rimuovere la vecchia voce con `ssh-keygen -R <host>`."
+
+#: src/wggui/remote.py:42
+msgid "Hostname nicht auflösbar: Schreibweise, DNS oder ssh-Config prüfen."
+msgstr "Impossibile risolvere il nome host: controllare l'ortografia, DNS o la configurazione ssh."
+
+#: src/wggui/remote.py:43
+msgid "Port geschlossen: läuft sshd, stimmt der Port?"
+msgstr "Porta chiusa: sshd è attivo? La porta è corretta?"
+
+#: src/wggui/remote.py:44 src/wggui/remote.py:45
+msgid "Keine Antwort: Host aus, Firewall oder falsches Netz (VPN?)."
+msgstr "Nessuna risposta: server spento, firewall o rete errata (VPN?)."
+
+#: src/wggui/remote.py:46
+msgid "Keine Route zum Host: Netz oder VPN prüfen."
+msgstr "Nessun percorso verso il server: controllare la rete o la VPN."
+
+#: src/wggui/remote.py:47 src/wggui/remote.py:49
+msgid "sudo verlangt ein Passwort: NOPASSWD für diesen Nutzer einrichten oder als root anmelden."
+msgstr "sudo richiede una password: configurare NOPASSWD per questo utente oppure accedere come root."
+
+#: src/wggui/remote.py:51 src/wggui/remote.py:52
+msgid "sudo ist auf dem Host nicht installiert."
+msgstr "sudo non è installato sul server."
+
+#: src/wggui/remote.py:56
+msgid "Befehl fehlgeschlagen"
+msgstr "Comando non riuscito"
+
+#: src/wggui/sshkeys.py:44
+msgid "Schlüsseldatei fehlt."
+msgstr "File della chiave mancante."
+
+#: src/wggui/sshkeys.py:47
+msgid "Schlüsseldatei: vollständigen Pfad angeben."
+msgstr "File della chiave: indicare il percorso completo."
+
+#: src/wggui/sshkeys.py:49
+msgid "Schlüsseldatei: die private Datei wählen (ohne .pub)."
+msgstr "File della chiave: scegliere quello privato (senza .pub)."
+
+#: src/wggui/sshkeys.py:51
+msgid "Schlüsseldatei {p} nicht gefunden."
+msgstr "File della chiave {p} non trovato."
+
+#: src/wggui/sshkeys.py:53
+msgid "Schlüsseldatei {p} ist für andere lesbar – ssh lehnt sie ab (chmod 600)."
+msgstr "Il file della chiave {p} è leggibile da altri: ssh lo rifiuta (chmod 600)."
+
+#: src/wggui/sshkeys.py:70
+msgid "Kommentar für den Schlüssel ungültig"
+msgstr "Commento della chiave non valido"
+
+#: src/wggui/sshkeys.py:72
+msgid "{path} gibt es schon – anderen Namen wählen oder die vorhandene Datei nehmen."
+msgstr "{path} esiste già: scegliere un altro nome o usare il file esistente."
+
+#: src/wggui/sshkeys.py:81
+msgid "ssh-keygen fehlgeschlagen: {v1}"
+msgstr "ssh-keygen non riuscito: {v1}"
+
+#: src/wggui/sshkeys.py:85
+msgid "Public Key nach dem Erzeugen nicht lesbar"
+msgstr "Impossibile leggere la chiave pubblica dopo la generazione"
+
+#: src/wggui/sync.py:109
+msgid "Keepalive"
+msgstr "Keepalive"
+
+#: src/wggui/sync.py:115
+msgid "nur in der Laufzeit (fehlen in der Datei): "
+msgstr "solo nell'interfaccia attiva (mancanti nel file): "
+
+#: src/wggui/sync.py:118
+msgid "in der Datei, aber nicht geladen: "
+msgstr "nel file ma non caricati: "
+
+#: src/wggui/sync.py:121
+msgid "Laufzeit weicht von der Datei ab: "
+msgstr "L'interfaccia attiva differisce dal file: "
+
+#: src/wggui/sync.py:122
+msgid "Laufzeit (wg show)"
+msgstr "Interfaccia attiva (wg show)"
+
+#: src/wggui/sync.py:148
+msgid "Auswahl {c!r} passt nicht zu {d_label}"
+msgstr "La scelta {c!r} non è adatta a {d_label}"
+
+#: src/wggui/sync.py:18 src/wggui/ui/dialogs.py:227 src/wggui/ui/dialogs.py:664
+msgid "In die App übernehmen"
+msgstr "Importa nell'app"
+
+#: src/wggui/sync.py:19
+msgid "Server anpassen"
+msgstr "Modifica il server"
+
+#: src/wggui/sync.py:20
+msgid "Aus der App entfernen"
+msgstr "Rimuovi dall'app"
+
+#: src/wggui/sync.py:21
+msgid "Auf dem Server anlegen (ohne PSK)"
+msgstr "Crea sul server (senza PSK)"
+
+#: src/wggui/sync.py:22
+msgid "Vom Server entfernen"
+msgstr "Rimuovi dal server"
+
+#: src/wggui/sync.py:23 src/wggui/ui/main_window.py:1464
+msgid "Laufzeit an die Datei angleichen"
+msgstr "Allinea l'interfaccia attiva al file"
+
+#: src/wggui/sync.py:24
+msgid "Nichts tun"
+msgstr "Non fare nulla"
+
+#: src/wggui/sync.py:28
+msgid "Peer {v1}…"
+msgstr "Peer {v1}…"
+
+#: src/wggui/sync.py:59
+msgid "Name: App {v1} / Server {srv_name}"
+msgstr "Nome: app {v1} / server {srv_name}"
+
+#: src/wggui/sync.py:61
+msgid "AllowedIPs: App {v1} / Server {v2}"
+msgstr "AllowedIPs: app {v1} / server {v2}"
+
+#: src/wggui/sync.py:63
+msgid "Keepalive: App {v1} / Server {v2}"
+msgstr "Keepalive: app {v1} / server {v2}"
+
+#: src/wggui/sync.py:65
+msgid "Gesperrt: App {v1} / Server {v2}"
+msgstr "Disabilitato: app {v1} / server {v2}"
+
+#: src/wggui/sync.py:69
+msgid "Endpoint: App {v1} / Server {v2}"
+msgstr "Endpoint: app {v1} / server {v2}"
+
+#: src/wggui/sync.py:72
+msgid "nur auf dem Server"
+msgstr "solo sul server"
+
+#: src/wggui/sync.py:72
+msgid "nur in der App"
+msgstr "solo nell'app"
+
+#: src/wggui/sync.py:87
+msgid "nur auf dem Server: {v1}"
+msgstr "solo sul server: {v1}"
+
+#: src/wggui/sync.py:98
+msgid "nur in der App: {v1} – auf dem Server nicht (mehr) vorhanden"
+msgstr "solo nell'app: {v1} – non più presente sul server"
+
+#: src/wggui/ui/dialogs.py:109
+msgid "SSH-Schlüssel:"
+msgstr "Chiave SSH:"
+
+#: src/wggui/ui/dialogs.py:112
+msgid "Anmeldung über den SSH-Agent. Neuen Server vorher einmal im Terminal mit <code>ssh &lt;ziel&gt;</code> verbinden (Host-Key bestätigen)."
+msgstr "Accesso tramite l'agente SSH. Per un nuovo server, collegarsi prima una volta dal terminale con <code>ssh &lt;destinazione&gt;</code> (confermare la chiave host)."
+
+#: src/wggui/ui/dialogs.py:114
+msgid "Login als root oder mit sudo ohne Passwort. Unterstützt: Debian/Ubuntu, Fedora/RHEL, Arch, Alpine, openSUSE."
+msgstr "Accedere come root o con sudo senza password. Supportati: Debian/Ubuntu, Fedora/RHEL, Arch, Alpine, openSUSE."
+
+#: src/wggui/ui/dialogs.py:120
+msgid "Speichern"
+msgstr "Salva"
+
+#: src/wggui/ui/dialogs.py:155
+msgid "Private SSH-Schlüsseldatei wählen"
+msgstr "Scegli il file della chiave SSH privata"
+
+#: src/wggui/ui/dialogs.py:161
+msgid "Zuerst einen gültigen Namen eingeben – er bestimmt den Dateinamen des Schlüssels."
+msgstr "Inserire prima un nome valido: determinerà il nome del file della chiave."
+
+#: src/wggui/ui/dialogs.py:187 src/wggui/ui/dialogs.py:334
+msgid "Name fehlt."
+msgstr "Nome mancante."
+
+#: src/wggui/ui/dialogs.py:189
+msgid "SSH-Ziel fehlt."
+msgstr "Destinazione SSH mancante."
+
+#: src/wggui/ui/dialogs.py:191
+msgid "Name: „{name}“ ist schon vergeben."
+msgstr "Il nome «{name}» è già in uso."
+
+#: src/wggui/ui/dialogs.py:214
+msgid "Vom Server übernehmen – {host_name}"
+msgstr "Importa dal server – {host_name}"
+
+#: src/wggui/ui/dialogs.py:216
+msgid "Diese Änderungen werden aus <b>{v1}</b> in die App übernommen. Auf dem Server wird nichts geändert."
+msgstr "Queste modifiche saranno importate da <b>{v1}</b> nell'app. Il server non verrà modificato."
+
+#: src/wggui/ui/dialogs.py:220
+msgid "Art"
+msgstr "Tipo"
+
+#: src/wggui/ui/dialogs.py:220
+msgid "Was"
+msgstr "Elemento"
+
+#: src/wggui/ui/dialogs.py:220
+msgid "Details"
+msgstr "Dettagli"
+
+#: src/wggui/ui/dialogs.py:248
+msgid "z. B. handy"
+msgstr "ad es. telefono"
+
+#: src/wggui/ui/dialogs.py:249
+msgid "Steht als Kommentar über dem Peer in der Server-Config."
+msgstr "Compare come commento sopra il peer nella configurazione del server."
+
+#: src/wggui/ui/dialogs.py:252
+msgid "Adresse des Clients im VPN ({nets}). Vorschlag: erste freie Adresse."
+msgstr "Indirizzo del client nella VPN ({nets}). Suggerimento: primo indirizzo libero."
+
+#: src/wggui/ui/dialogs.py:253
+msgid "Nur das &VPN-Netz ({nets})"
+msgstr "Solo la rete &VPN ({nets})"
+
+#: src/wggui/ui/dialogs.py:254
+msgid "&Gesamter Internetverkehr über den Server"
+msgstr "Tutto il traffico &Internet tramite il server"
+
+#: src/wggui/ui/dialogs.py:256
+msgid "Dafür muss der Server Weiterleitung und NAT erlauben (sysctl, Firewall). Die App ändert das nicht."
+msgstr "Il server deve consentire l'inoltro e NAT (sysctl, firewall). L'app non modifica queste impostazioni."
+
+#: src/wggui/ui/dialogs.py:263
+msgid "Wie der Client den Server von außen erreicht (Hostname oder IP und Port)."
+msgstr "Come il client raggiunge il server dall'esterno (nome host o IP e porta)."
+
+#: src/wggui/ui/dialogs.py:265
+msgid "optional, z. B. 10.98.0.1"
+msgstr "facoltativo, ad es. 10.98.0.1"
+
+#: src/wggui/ui/dialogs.py:266 src/wggui/ui/provision_dialogs.py:152
+msgid "&PresharedKey verwenden (zusätzlicher Schutz)"
+msgstr "Usa &PresharedKey (protezione aggiuntiva)"
+
+#: src/wggui/ui/dialogs.py:268
+msgid "Verbindung &offen halten (PersistentKeepalive 25 s, für Handys hinter NAT)"
+msgstr "Mantieni &attiva la connessione (PersistentKeepalive 25 s, per telefoni dietro NAT)"
+
+#: src/wggui/ui/dialogs.py:277
+msgid "Verkehr:"
+msgstr "Traffico:"
+
+#: src/wggui/ui/dialogs.py:280
+msgid "Verbindung (vorbelegt)"
+msgstr "Connessione (precompilata)"
+
+#: src/wggui/ui/dialogs.py:285
+msgid "Weitere Einstellungen"
+msgstr "Altre impostazioni"
+
+#: src/wggui/ui/dialogs.py:298
+msgid "Die Schlüssel des Clients entstehen hier auf dem Rechner und werden nicht gespeichert. Im nächsten Schritt kommt die Vorschau der Änderung am Server."
+msgstr "Le chiavi del client vengono create su questo computer e non vengono salvate. Il passaggio successivo mostra un'anteprima della modifica sul server."
+
+#: src/wggui/ui/dialogs.py:305
+msgid "Der Peer bekommt neue Schlüssel. Das bisherige Gerät verbindet sich erst wieder, wenn es den neuen QR-Code gescannt hat. Name, Adresse und übrige Einstellungen bleiben."
+msgstr "Il peer riceverà nuove chiavi. Il dispositivo precedente potrà riconnettersi solo dopo aver scansionato il nuovo codice QR. Nome, indirizzo e altre impostazioni resteranno invariati."
+
+#: src/wggui/ui/dialogs.py:310 src/wggui/ui/dialogs.py:558 src/wggui/ui/provision_dialogs.py:74
+msgid "Weiter…"
+msgstr "Avanti…"
+
+#: src/wggui/ui/dialogs.py:368
+msgid "Änderung auf {plan_host_name} schreiben"
+msgstr "Scrivi la modifica su {plan_host_name}"
+
+#: src/wggui/ui/dialogs.py:378
+msgid "Vorschau – „+“ kommt dazu, „-“ fällt weg:"
+msgstr "Anteprima: «+» viene aggiunto, «-» viene rimosso:"
+
+#: src/wggui/ui/dialogs.py:382
+msgid "Änderung (Diff)"
+msgstr "Modifica (diff)"
+
+#: src/wggui/ui/dialogs.py:389
+msgid "Tunnel läuft weiter (wg syncconf)"
+msgstr "Il tunnel resta attivo (wg syncconf)"
+
+#: src/wggui/ui/dialogs.py:389
+msgid "nur Datei, Interface läuft nicht"
+msgstr "solo file, interfaccia non attiva"
+
+#: src/wggui/ui/dialogs.py:390
+msgid "Ablauf: Backup vorher · Rücknahme nach {seconds} s, falls keine Bestätigung ankommt · {runtime}"
+msgstr "Procedura: backup iniziale · ripristino dopo {seconds} s se non arriva una conferma · {runtime}"
+
+#: src/wggui/ui/dialogs.py:398 src/wggui/ui/dialogs.py:407
+msgid "Ablauf anzeigen"
+msgstr "Mostra i passaggi"
+
+#: src/wggui/ui/dialogs.py:407
+msgid "Ablauf ausblenden"
+msgstr "Nascondi i passaggi"
+
+#: src/wggui/ui/dialogs.py:415
+msgid "Auf {plan_host_name} schreiben"
+msgstr "Scrivi su {plan_host_name}"
+
+#: src/wggui/ui/dialogs.py:443
+msgid "Client {name} – QR-Code"
+msgstr "Client {name} – codice QR"
+
+#: src/wggui/ui/dialogs.py:452
+msgid "QR-Code mit der Config für {name}"
+msgstr "Codice QR con la configurazione per {name}"
+
+#: src/wggui/ui/dialogs.py:453
+msgid "<span style=\"font-size:large; font-weight:600\">Jetzt mit der WireGuard-App scannen</span><br>In der App „Aus QR-Code erstellen“ wählen. Alternativ als Datei speichern."
+msgstr "<span style=\"font-size:large; font-weight:600\">Scansiona ora con l'app WireGuard</span><br>Nell'app, scegliere «Crea da codice QR». In alternativa, salvare come file."
+
+#: src/wggui/ui/dialogs.py:457
+msgid "Enthält den privaten Schlüssel des Clients und wird nicht gespeichert. Nach dem Schließen ist die Config weg."
+msgstr "Contiene la chiave privata del client e non viene salvata. Chiudendo questa finestra, la configurazione andrà persa."
+
+#: src/wggui/ui/dialogs.py:462
+msgid "Als Datei &speichern…"
+msgstr "&Salva come file…"
+
+#: src/wggui/ui/dialogs.py:481
+msgid "Nicht gespeichert: {reason}. Anderen Ordner wählen – die Config ist weiter nur hier im Fenster."
+msgstr "Salvataggio non riuscito: {reason}. Scegliere un'altra cartella: la configurazione è ancora disponibile solo in questa finestra."
+
+#: src/wggui/ui/dialogs.py:490
+msgid "Client-Config speichern"
+msgstr "Salva la configurazione del client"
+
+#: src/wggui/ui/dialogs.py:491
+msgid "WireGuard-Config (*.conf)"
+msgstr "Configurazione WireGuard (*.conf)"
+
+#: src/wggui/ui/dialogs.py:496
+msgid "Config verwerfen?"
+msgstr "Scartare la configurazione?"
+
+#: src/wggui/ui/dialogs.py:497
+msgid "Die Config wurde nicht gespeichert. Nach dem Schließen ist der private Schlüssel weg.\n\nWurde der QR-Code schon gescannt?"
+msgstr "La configurazione non è stata salvata. Chiudendo questa finestra, la chiave privata andrà persa.\n\nIl codice QR è già stato scansionato?"
+
+#: src/wggui/ui/dialogs.py:522
+msgid "Peer bearbeiten – {title}"
+msgstr "Modifica peer – {title}"
+
+#: src/wggui/ui/dialogs.py:525
+msgid "leer = Name unverändert lassen"
+msgstr "vuoto = lascia invariato il nome"
+
+#: src/wggui/ui/dialogs.py:527
+msgid "Adressen/Netze, die zu diesem Peer geroutet werden, durch Komma getrennt."
+msgstr "Indirizzi o reti instradati verso questo peer, separati da virgole."
+
+#: src/wggui/ui/dialogs.py:540
+msgid "Peer-Details (unverändert)"
+msgstr "Dettagli del peer (invariati)"
+
+#: src/wggui/ui/dialogs.py:545
+msgid "Endpoint:"
+msgstr "Endpoint:"
+
+#: src/wggui/ui/dialogs.py:546
+msgid "Schlüssel und PresharedKey bleiben unverändert. Im nächsten Schritt kommt die Vorschau."
+msgstr "Le chiavi e PresharedKey resteranno invariati. Il passaggio successivo mostra l'anteprima."
+
+#: src/wggui/ui/dialogs.py:581 src/wggui/ui/provision_dialogs.py:205
+msgid "AllowedIPs: {a} ist kein Netz."
+msgstr "AllowedIPs: {a} non è una rete."
+
+#: src/wggui/ui/dialogs.py:583
+msgid "AllowedIPs überschneiden sich mit {hit}."
+msgstr "AllowedIPs si sovrappongono a {hit}."
+
+#: src/wggui/ui/dialogs.py:60
+msgid "Host bearbeiten"
+msgstr "Modifica host"
+
+#: src/wggui/ui/dialogs.py:60
+msgid "Host hinzufügen"
+msgstr "Aggiungi host"
+
+#: src/wggui/ui/dialogs.py:609
+msgid "Mit Server abgleichen – {title}"
+msgstr "Sincronizza con il server – {title}"
+
+#: src/wggui/ui/dialogs.py:611
+msgid "Je Zeile die Richtung wählen. „In die App …“ ändert nur die App; alles, was den Server ändert, kommt danach gesammelt in eine Vorschau mit Backup und Rollback."
+msgstr "Scegliere la direzione per ogni riga. «Importa nell'app» modifica solo l'app; tutte le modifiche al server vengono raccolte in un'unica anteprima con backup e ripristino."
+
+#: src/wggui/ui/dialogs.py:615
+msgid "Peer"
+msgstr "Peer"
+
+#: src/wggui/ui/dialogs.py:615
+msgid "Abweichung"
+msgstr "Differenza"
+
+#: src/wggui/ui/dialogs.py:615
+msgid "Aktion"
+msgstr "Azione"
+
+#: src/wggui/ui/dialogs.py:629
+msgid "Aktion für {d_label}"
+msgstr "Azione per {d_label}"
+
+#: src/wggui/ui/dialogs.py:66
+msgid "Login als user@host oder ein Alias aus ~/.ssh/config."
+msgstr "Accesso come user@host o tramite un alias di ~/.ssh/config."
+
+#: src/wggui/ui/dialogs.py:661 src/wggui/ui/dialogs.py:662
+msgid "{n} Änderung"
+msgid_plural "{n} Änderungen"
+msgstr[0] "{n} modifica"
+msgstr[1] "{n} modifiche"
+
+#: src/wggui/ui/dialogs.py:663
+msgid "App: {app} · Server: {server}"
+msgstr "App: {app} · Server: {server}"
+
+#: src/wggui/ui/dialogs.py:664
+msgid "Weiter zur Vorschau…"
+msgstr "Vai all'anteprima…"
+
+#: src/wggui/ui/dialogs.py:673
+msgid "SSH-Public-Key – {name}"
+msgstr "Chiave pubblica SSH – {name}"
+
+#: src/wggui/ui/dialogs.py:675
+msgid "<span style=\"font-size:large; font-weight:600\">Public Key auf dem Server eintragen</span><br>Diese Zeile gehört in <code>authorized_keys</code> des Login-Nutzers auf dem Server. Der private Schlüssel bleibt hier und wird nicht angezeigt."
+msgstr "<span style=\"font-size:large; font-weight:600\">Aggiungi la chiave pubblica sul server</span><br>Questa riga va inserita in <code>authorized_keys</code> dell'utente di accesso sul server. La chiave privata resta qui e non viene mostrata."
+
+#: src/wggui/ui/dialogs.py:683
+msgid "Öffentlicher SSH-Schlüssel"
+msgstr "Chiave pubblica SSH"
+
+#: src/wggui/ui/dialogs.py:685
+msgid "Mit Passwort-Login einmal im Terminal: <code>ssh-copy-id -i {path}.pub {target}</code><br>Sonst die Zeile oben von Hand eintragen."
+msgstr "Se è attivo l'accesso con password, eseguire una volta nel terminale: <code>ssh-copy-id -i {path}.pub {target}</code><br>Altrimenti inserire manualmente la riga qui sopra."
+
+#: src/wggui/ui/dialogs.py:69
+msgid "Standard"
+msgstr "Predefinito"
+
+#: src/wggui/ui/dialogs.py:690
+msgid "Public Key &kopieren"
+msgstr "&Copia la chiave pubblica"
+
+#: src/wggui/ui/dialogs.py:70
+msgid "Standard: Port aus ~/.ssh/config, sonst 22."
+msgstr "Predefinito: porta da ~/.ssh/config, altrimenti 22."
+
+#: src/wggui/ui/dialogs.py:72
+msgid "Befehle mit &sudo ausführen (Login ist nicht root)"
+msgstr "Esegui i comandi con &sudo (l'accesso non avviene come root)"
+
+#: src/wggui/ui/dialogs.py:74
+msgid "Nutzt sudo -n: Auf dem Host muss für diesen Nutzer sudo ohne Passwort (NOPASSWD) eingerichtet sein."
+msgstr "Usa sudo -n: sul server deve essere configurato sudo senza password (NOPASSWD) per questo utente."
+
+#: src/wggui/ui/dialogs.py:77
+msgid "S&ystem (SSH-Agent, ssh-Config)"
+msgstr "S&istema (agente SSH, configurazione ssh)"
+
+#: src/wggui/ui/dialogs.py:78
+msgid "Eigene Schlüssel&datei:"
+msgstr "&File della chiave personale:"
+
+#: src/wggui/ui/dialogs.py:80
+msgid "/home/…/id_ed25519 (private Datei, nicht .pub)"
+msgstr "/home/…/id_ed25519 (file privato, non .pub)"
+
+#: src/wggui/ui/dialogs.py:81
+msgid "Wählen…"
+msgstr "Scegli…"
+
+#: src/wggui/ui/dialogs.py:82
+msgid "Neu erzeugen…"
+msgstr "Genera nuova…"
+
+#: src/wggui/ui/dialogs.py:83
+msgid "Neues ed25519-Paar im Datenordner der App (ohne Passphrase). Den Public Key danach auf dem Server eintragen."
+msgstr "Nuova coppia ed25519 nella cartella dati dell'app (senza passphrase). Aggiungere poi la chiave pubblica sul server."
+
+#: src/wggui/ui/log_view.py:54 src/wggui/ui/main_window.py:345
+msgid "Protokoll"
+msgstr "Registro"
+
+#: src/wggui/ui/log_view.py:63
+msgid "Log-Datei: keine (nur Anzeige)"
+msgstr "File di registro: nessuno (solo visualizzazione)"
+
+#: src/wggui/ui/log_view.py:65
+msgid "Datenbank: {db_path}"
+msgstr "Database: {db_path}"
+
+#: src/wggui/ui/log_view.py:70
+msgid "Log-Datei öffnen"
+msgstr "Apri il file di registro"
+
+#: src/wggui/ui/log_view.py:72
+msgid "Ordner öffnen"
+msgstr "Apri la cartella"
+
+#: src/wggui/ui/log_view.py:76
+msgid "Anzeige leeren"
+msgstr "Pulisci la visualizzazione"
+
+#: src/wggui/ui/main_window.py:1022 src/wggui/ui/main_window.py:1059
+msgid "Client hinzufügen"
+msgstr "Aggiungi client"
+
+#: src/wggui/ui/main_window.py:1023
+msgid "{iface}: Config-Datei oder Public Key nicht lesbar. Host neu lesen (F5) und Hinweise im Fenster prüfen."
+msgstr "{iface}: impossibile leggere il file di configurazione o la chiave pubblica. Ricaricare l'host (F5) e controllare gli avvisi nella finestra."
+
+#: src/wggui/ui/main_window.py:1040
+msgid "Die SSH-Verbindung zu {host_name} läuft über {iface} – also über den eigenen Zugang. Bricht sie ab, setzt {host_name} die Änderung nach {apply_ROLLBACK_SECONDS} s selbst zurück."
+msgstr "La connessione SSH a {host_name} passa per {iface}, quindi tramite l'accesso in uso. Se si interrompe, {host_name} ripristinerà autonomamente la configurazione dopo {apply_ROLLBACK_SECONDS} s."
+
+#: src/wggui/ui/main_window.py:1047
+msgid "SaveConfig = true: wg-quick schreibt beim Stoppen den Laufzeitstand in die Datei. Der neue Peer ist dort enthalten, Kommentare können verloren gehen."
+msgstr "SaveConfig = true: all'arresto wg-quick scrive nel file lo stato dell'interfaccia attiva. Il nuovo peer sarà incluso, ma i commenti potrebbero andare persi."
+
+#: src/wggui/ui/main_window.py:1069
+msgid "{host_name}: Client {spec_name} angelegt"
+msgstr "{host_name}: client {spec_name} creato"
+
+#: src/wggui/ui/main_window.py:1074 src/wggui/ui/main_window.py:1175 src/wggui/ui/main_window.py:1337
+msgid "Schreibe auf"
+msgstr "Scrittura su"
+
+#: src/wggui/ui/main_window.py:1087 src/wggui/ui/main_window.py:758
+msgid "Peer {v1}"
+msgstr "Peer {v1}"
+
+#: src/wggui/ui/main_window.py:1108
+msgid "{iface}: Config-Datei nicht lesbar. Hinweise im Fenster prüfen."
+msgstr "{iface}: impossibile leggere il file di configurazione. Controllare gli avvisi nella finestra."
+
+#: src/wggui/ui/main_window.py:1127
+msgid "{host_name}/{iface}: keine Änderung nötig"
+msgstr "{host_name}/{iface}: nessuna modifica necessaria"
+
+#: src/wggui/ui/main_window.py:1130
+msgid "(Die Datei bleibt unverändert – wg syncconf lädt sie neu in die Laufzeit.)\n"
+msgstr "(Il file resta invariato: wg syncconf lo ricarica nell'interfaccia attiva.)\n"
+
+#: src/wggui/ui/main_window.py:1134
+msgid "Die SSH-Verbindung zu {host_name} läuft über {iface}. Betrifft die Änderung den eigenen Zugang, bricht sie ab – dann setzt {host_name} nach {apply_ROLLBACK_SECONDS} s alles selbst zurück."
+msgstr "La connessione SSH a {host_name} passa per {iface}. Se la modifica incide sull'accesso in uso, la connessione si interromperà; {host_name} ripristinerà autonomamente la configurazione dopo {apply_ROLLBACK_SECONDS} s."
+
+#: src/wggui/ui/main_window.py:1142
+msgid "SaveConfig = true: Beim Stoppen überschreibt wg-quick die Datei mit dem Laufzeitstand; gesperrte Peers und Kommentare gehen dann verloren."
+msgstr "SaveConfig = true: all'arresto wg-quick sovrascrive il file con lo stato dell'interfaccia attiva; i peer disabilitati e i commenti andranno persi."
+
+#: src/wggui/ui/main_window.py:1169
+msgid "{host_name}/{iface}: {action} – erledigt"
+msgstr "{host_name}/{iface}: {action} – completato"
+
+#: src/wggui/ui/main_window.py:1180
+msgid "Der Peer steht nicht (mehr) in der Server-Datei. „Mit Server abgleichen…“ zeigt, was abweicht."
+msgstr "Il peer non è presente nel file sul server. «Sincronizza con il server…» mostra le differenze."
+
+#: src/wggui/ui/main_window.py:1196
+msgid "{v1} ändern"
+msgstr "Modifica {v1}"
+
+#: src/wggui/ui/main_window.py:1198 src/wggui/ui/main_window.py:1188
+msgid "Peer bearbeiten"
+msgstr "Modifica peer"
+
+#: src/wggui/ui/main_window.py:121
+msgid "gesperrt"
+msgstr "disabilitato"
+
+#: src/wggui/ui/main_window.py:1211
+msgid "{label} kann sich danach nicht mehr verbinden. Der Block bleibt auskommentiert in der Datei; „Peer entsperren…“ stellt ihn wieder her."
+msgstr "{label} non potrà più connettersi. Il blocco resterà commentato nel file; «Abilita peer…» lo ripristina."
+
+#: src/wggui/ui/main_window.py:1214 src/wggui/ui/main_window.py:1204
+msgid "Peer sperren"
+msgstr "Disabilita peer"
+
+#: src/wggui/ui/main_window.py:122
+msgid "Gesperrt: in der Config auskommentiert (#wggui-off), kann sich nicht verbinden."
+msgstr "Disabilitato: commentato nella configurazione (#wggui-off); non può connettersi."
+
+#: src/wggui/ui/main_window.py:1225
+msgid "{label} wird aus der Datei gelöscht (das Backup bleibt auf dem Server). Der Client kann sich nicht mehr verbinden; seine Schlüssel lassen sich nicht wiederherstellen. Nur vorübergehend? Dann „Peer sperren…“."
+msgstr "{label} verrà eliminato dal file (il backup resterà sul server). Il client non potrà più connettersi e le sue chiavi non potranno essere recuperate. Se è una misura temporanea, usare «Disabilita peer…»."
+
+#: src/wggui/ui/main_window.py:1229 src/wggui/ui/main_window.py:1220
+msgid "Peer entfernen"
+msgstr "Rimuovi peer"
+
+#: src/wggui/ui/main_window.py:1245
+msgid "{label} hat keine einzelne Adresse im VPN-Netz (z. B. Standort-Tunnel) – dafür gibt es keine Client-Config."
+msgstr "{label} non ha un singolo indirizzo nella rete VPN (ad es. un tunnel tra sedi): non è disponibile una configurazione client."
+
+#: src/wggui/ui/main_window.py:125
+msgid "nicht geladen"
+msgstr "non caricato"
+
+#: src/wggui/ui/main_window.py:1252
+msgid "Public Key des Servers nicht lesbar."
+msgstr "Impossibile leggere la chiave pubblica del server."
+
+#: src/wggui/ui/main_window.py:126
+msgid "Peer steht in der Datei, ist im laufenden Interface aber nicht aktiv."
+msgstr "Il peer è nel file ma non è attivo nell'interfaccia in esecuzione."
+
+#: src/wggui/ui/main_window.py:1263
+msgid "{label} bekommt neue Schlüssel. Das bisherige Gerät verbindet sich erst wieder, wenn es den neuen QR-Code gescannt hat."
+msgstr "{label} riceverà nuove chiavi. Il dispositivo precedente potrà riconnettersi solo dopo aver scansionato il nuovo codice QR."
+
+#: src/wggui/ui/main_window.py:127
+msgid "Interface läuft nicht oder wurde noch nicht gelesen."
+msgstr "L'interfaccia non è attiva o non è ancora stata letta."
+
+#: src/wggui/ui/main_window.py:1270
+msgid "{label}: neue Schlüssel ausstellen"
+msgstr "{label}: genera nuove chiavi"
+
+#: src/wggui/ui/main_window.py:1272 src/wggui/ui/main_window.py:1237 src/wggui/ui/main_window.py:1244
+msgid "Neuen QR-Code ausstellen"
+msgstr "Genera un nuovo codice QR"
+
+#: src/wggui/ui/main_window.py:1283
+msgid "{host}: wireguard-tools sind schon installiert"
+msgstr "{host}: wireguard-tools è già installato"
+
+#: src/wggui/ui/main_window.py:1288
+msgid "Keine automatische Installation für diese Distribution. Von Hand: {hint}"
+msgstr "Installazione automatica non disponibile per questa distribuzione. Installazione manuale: {hint}"
+
+#: src/wggui/ui/main_window.py:129
+msgid "nie verbunden"
+msgstr "mai connesso"
+
+#: src/wggui/ui/main_window.py:129
+msgid "Noch kein Handshake seit dem Start des Interfaces."
+msgstr "Nessun handshake dall'avvio dell'interfaccia."
+
+#: src/wggui/ui/main_window.py:1295
+msgid "{host}: wireguard-tools installiert"
+msgstr "{host}: wireguard-tools installato"
+
+#: src/wggui/ui/main_window.py:1299
+msgid "Installiere auf"
+msgstr "Installazione su"
+
+#: src/wggui/ui/main_window.py:131
+msgid "aktiv"
+msgstr "attivo"
+
+#: src/wggui/ui/main_window.py:131
+msgid "Handshake in den letzten 3 Minuten."
+msgstr "Handshake negli ultimi 3 minuti."
+
+#: src/wggui/ui/main_window.py:1319
+msgid "Neues Interface"
+msgstr "Nuova interfaccia"
+
+#: src/wggui/ui/main_window.py:1319
+msgid "wireguard-tools fehlen – zuerst „wireguard-tools installieren…“."
+msgstr "wireguard-tools non è presente – usa prima «Installa wireguard-tools…»."
+
+#: src/wggui/ui/main_window.py:132
+msgid "offline"
+msgstr "offline"
+
+#: src/wggui/ui/main_window.py:132
+msgid "Letzter Handshake vor mehr als 3 Minuten: Peer vermutlich offline."
+msgstr "Ultimo handshake oltre 3 minuti fa: peer probabilmente offline."
+
+#: src/wggui/ui/main_window.py:1327
+msgid "{host}: Interface {name} angelegt – „Vom Server übernehmen…“ holt es in die App"
+msgstr "{host}: interfaccia {name} creata – «Importa dal server…» la aggiunge all'app"
+
+#: src/wggui/ui/main_window.py:1359 src/wggui/ui/main_window.py:1385 src/wggui/ui/main_window.py:1378
+msgid "Server-Tunnel anlegen"
+msgstr "Crea un tunnel tra server"
+
+#: src/wggui/ui/main_window.py:1359
+msgid "Public Key dieses Interfaces unbekannt – zuerst „Vom Server übernehmen…“."
+msgstr "Chiave pubblica di questa interfaccia sconosciuta – usa prima «Importa dal server…»."
+
+#: src/wggui/ui/main_window.py:1386
+msgid "Nur Seite A geschrieben – Seite B abgebrochen. Den Peer auf A ggf. wieder entfernen."
+msgstr "Modificato solo il lato A – operazione sul lato B annullata. Se necessario, rimuovi il peer dal lato A."
+
+#: src/wggui/ui/main_window.py:139
+msgid "Unbekannter Fehler"
+msgstr "Errore sconosciuto"
+
+#: src/wggui/ui/main_window.py:1392
+msgid "Tunnel {a} ↔ {b} angelegt"
+msgstr "Tunnel {a} ↔ {b} creato"
+
+#: src/wggui/ui/main_window.py:1415
+msgid "{host}/{iface}: keine alten Backups (die neuesten {n} bleiben)"
+msgstr "{host}/{iface}: nessun backup vecchio (vengono mantenuti i {n} più recenti)"
+
+#: src/wggui/ui/main_window.py:1423
+msgid "{host}/{iface}: {n} Backup gelöscht"
+msgid_plural "{host}/{iface}: {n} Backups gelöscht"
+msgstr[0] "{host}/{iface}: {n} backup eliminato"
+msgstr[1] "{host}/{iface}: {n} backup eliminati"
+
+#: src/wggui/ui/main_window.py:1426
+msgid "Lösche auf"
+msgstr "Eliminazione su"
+
+#: src/wggui/ui/main_window.py:1438
+msgid "{host_name}/{iface}: App, Datei und Laufzeit stimmen überein"
+msgstr "{host_name}/{iface}: app, file e interfaccia attiva corrispondono"
+
+#: src/wggui/ui/main_window.py:1454
+msgid "{host}/{iface}: {n} Änderung in die App übernommen"
+msgid_plural "{host}/{iface}: {n} Änderungen in die App übernommen"
+msgstr[0] "{host}/{iface}: {n} modifica importata nell'app"
+msgstr[1] "{host}/{iface}: {n} modifiche importate nell'app"
+
+#: src/wggui/ui/main_window.py:1462
+msgid "{n} Peer-Änderung aus dem Abgleich"
+msgid_plural "{n} Peer-Änderungen aus dem Abgleich"
+msgstr[0] "{n} modifica al peer dalla sincronizzazione"
+msgstr[1] "{n} modifiche ai peer dalla sincronizzazione"
+
+#: src/wggui/ui/main_window.py:1467
+msgid "Mit Server abgleichen"
+msgstr "Sincronizza con il server"
+
+#: src/wggui/ui/main_window.py:1480 src/wggui/ui/main_window.py:1287
+msgid "wireguard-tools installieren"
+msgstr "Installa wireguard-tools"
+
+#: src/wggui/ui/main_window.py:1481
+msgid "Auf {host} ausführen?\n\n{command}"
+msgstr "Eseguire su {host}?\n\n{command}"
+
+#: src/wggui/ui/main_window.py:1482
+msgid "Installieren"
+msgstr "Installa"
+
+#: src/wggui/ui/main_window.py:1496
+msgid "Alte Backups aufräumen"
+msgstr "Pulisci backup vecchi"
+
+#: src/wggui/ui/main_window.py:1497
+msgid "Auf {host} {n} alte Sicherung löschen?"
+msgid_plural "Auf {host} {n} alte Sicherungen löschen?"
+msgstr[0] "Eliminare {n} backup vecchio su {host}?"
+msgstr[1] "Eliminare {n} backup vecchi su {host}?"
+
+#: src/wggui/ui/main_window.py:1500
+msgid "Es bleiben die neuesten {kept}. Die Config selbst ändert sich nicht."
+msgstr "Vengono mantenuti i {kept} più recenti. La configurazione non cambia."
+
+#: src/wggui/ui/main_window.py:1502
+msgid "Löschen"
+msgstr "Elimina"
+
+#: src/wggui/ui/main_window.py:1508
+msgid "Host entfernen"
+msgstr "Rimuovi host"
+
+#: src/wggui/ui/main_window.py:1509
+msgid "{host_name} mit allen Interfaces und Peers aus der App entfernen?\n\nAuf dem Server wird nichts geändert."
+msgstr "Rimuovere {host_name} e tutte le sue interfacce e i suoi peer dall'app?\n\nIl server non verrà modificato."
+
+#: src/wggui/ui/main_window.py:1511
+msgid "Entfernen"
+msgstr "Rimuovi"
+
+#: src/wggui/ui/main_window.py:153
+msgid "Verbindung testen oder Details im Protokoll ansehen"
+msgstr "Provare la connessione o consultare i dettagli nel registro"
+
+#: src/wggui/ui/main_window.py:164
+msgid "Kein root-Zugriff: als root anmelden oder im Host „sudo“ einschalten (Host bearbeiten…)."
+msgstr "Accesso root assente: accedere come root oppure abilitare «sudo» per l'host (Modifica host…)."
+
+#: src/wggui/ui/main_window.py:166
+msgid "wireguard-tools fehlen. Installieren: {info_install_hint}"
+msgstr "wireguard-tools mancante. Installazione: {info_install_hint}"
+
+#: src/wggui/ui/main_window.py:196
+msgid "Hosts und Interfaces"
+msgstr "Host e interfacce"
+
+#: src/wggui/ui/main_window.py:211 src/wggui/ui/main_window.py:295
+msgid "Host hinzufügen…"
+msgstr "Aggiungi host…"
+
+#: src/wggui/ui/main_window.py:218
+msgid "<h2>Noch kein Host eingetragen</h2>Ein Host ist ein Linux-Server mit WireGuard, den die App per SSH liest.<br>Mit <b>Host hinzufügen…</b> (Strg+N) beginnen."
+msgstr "<h2>Nessun host configurato</h2>Un host è un server Linux con WireGuard che l'app legge tramite SSH.<br>Per iniziare, scegliere <b>Aggiungi host…</b> (Ctrl+N)."
+
+#: src/wggui/ui/main_window.py:230
+msgid "Peers"
+msgstr "Peer"
+
+#: src/wggui/ui/main_window.py:243
+msgid "Peers filtern: Name, IP oder Schlüssel (Strg+F)"
+msgstr "Filtra i peer per nome, IP o chiave (Ctrl+F)"
+
+#: src/wggui/ui/main_window.py:245 src/wggui/ui/main_window.py:342
+msgid "Peers filtern"
+msgstr "Filtra peer"
+
+#: src/wggui/ui/main_window.py:271
+msgid "SSH läuft"
+msgstr "SSH in esecuzione"
+
+#: src/wggui/ui/main_window.py:296
+msgid "Linux-Server eintragen, den die App per SSH liest"
+msgstr "Aggiungi un server Linux da leggere tramite SSH"
+
+#: src/wggui/ui/main_window.py:297
+msgid "Host bearbeiten…"
+msgstr "Modifica host…"
+
+#: src/wggui/ui/main_window.py:298
+msgid "Name, SSH-Ziel, Port oder sudo ändern"
+msgstr "Modifica nome, destinazione SSH, porta o sudo"
+
+#: src/wggui/ui/main_window.py:299
+msgid "Host entfernen…"
+msgstr "Rimuovi host…"
+
+#: src/wggui/ui/main_window.py:301
+msgid "Host aus der App entfernen – auf dem Server ändert sich nichts"
+msgstr "Rimuovi l'host dall'app: il server non verrà modificato"
+
+#: src/wggui/ui/main_window.py:303
+msgid "SSH-Public-Key anzeigen…"
+msgstr "Mostra la chiave pubblica SSH…"
+
+#: src/wggui/ui/main_window.py:304
+msgid "Öffentlichen Teil des eigenen SSH-Schlüssels dieses Hosts anzeigen und kopieren (zum Eintragen auf dem Server)"
+msgstr "Mostra e copia la chiave pubblica SSH personale di questo host (da aggiungere sul server)"
+
+#: src/wggui/ui/main_window.py:306
+msgid "wireguard-tools installieren…"
+msgstr "Installa wireguard-tools…"
+
+#: src/wggui/ui/main_window.py:307
+msgid "wireguard-tools mit dem Paketmanager des Servers installieren"
+msgstr "Installa wireguard-tools con il gestore di pacchetti del server"
+
+#: src/wggui/ui/main_window.py:308
+msgid "Neues Interface…"
+msgstr "Nuova interfaccia…"
+
+#: src/wggui/ui/main_window.py:309
+msgid "Neues WireGuard-Interface auf diesem Server anlegen – Schlüssel entsteht auf dem Server"
+msgstr "Crea una nuova interfaccia WireGuard su questo server – la chiave viene generata sul server"
+
+#: src/wggui/ui/main_window.py:311
+msgid "Server-Tunnel anlegen…"
+msgstr "Crea un tunnel tra server…"
+
+#: src/wggui/ui/main_window.py:312
+msgid "Tunnel zwischen diesem Interface und einem Interface auf einem anderen Server anlegen (beide Seiten)"
+msgstr "Crea un tunnel tra questa interfaccia e un'interfaccia su un altro server (entrambi i lati)"
+
+#: src/wggui/ui/main_window.py:314
+msgid "Verbindung testen"
+msgstr "Prova connessione"
+
+#: src/wggui/ui/main_window.py:315
+msgid "SSH-Login, root/sudo und wireguard-tools prüfen"
+msgstr "Verifica l'accesso SSH, root/sudo e wireguard-tools"
+
+#: src/wggui/ui/main_window.py:316
+msgid "Aktualisieren"
+msgstr "Aggiorna"
+
+#: src/wggui/ui/main_window.py:317
+msgid "Status aller Hosts per SSH lesen"
+msgstr "Leggi lo stato di tutti gli host tramite SSH"
+
+#: src/wggui/ui/main_window.py:318
+msgid "Vom Server übernehmen…"
+msgstr "Importa dal server…"
+
+#: src/wggui/ui/main_window.py:319
+msgid "Configs des Hosts in die App übernehmen – vorher Vorschau"
+msgstr "Importa le configurazioni dell'host nell'app, con anteprima"
+
+#: src/wggui/ui/main_window.py:320
+msgid "Client hinzufügen…"
+msgstr "Aggiungi client…"
+
+#: src/wggui/ui/main_window.py:321
+msgid "Neuen Client (Handy, Laptop) an diesem Interface anlegen, mit QR-Code"
+msgstr "Crea un nuovo client (telefono, portatile) su questa interfaccia, con codice QR"
+
+#: src/wggui/ui/main_window.py:322
+msgid "Mit Server abgleichen…"
+msgstr "Sincronizza con il server…"
+
+#: src/wggui/ui/main_window.py:323
+msgid "Abweichungen App ↔ Server-Datei ↔ Laufzeit anzeigen, Richtung je Peer wählen"
+msgstr "Mostra le differenze tra app ↔ file sul server ↔ interfaccia attiva e scegli la direzione per ogni peer"
+
+#: src/wggui/ui/main_window.py:325
+msgid "Alte Backups aufräumen…"
+msgstr "Pulisci backup vecchi…"
+
+#: src/wggui/ui/main_window.py:326
+msgid "Ältere Sicherungen der Config auf dem Server löschen – die neuesten {n} bleiben"
+msgstr "Elimina le copie più vecchie della configurazione sul server; vengono mantenute le {n} più recenti"
+
+#: src/wggui/ui/main_window.py:328
+msgid "Peer bearbeiten…"
+msgstr "Modifica peer…"
+
+#: src/wggui/ui/main_window.py:329
+msgid "Name, AllowedIPs oder Keepalive auf dem Server ändern – mit Vorschau"
+msgstr "Modifica nome, AllowedIPs o Keepalive sul server, con anteprima"
+
+#: src/wggui/ui/main_window.py:330 src/wggui/ui/main_window.py:431
+msgid "Peer sperren…"
+msgstr "Disabilita peer…"
+
+#: src/wggui/ui/main_window.py:331
+msgid "Peer auf dem Server auskommentieren bzw. wieder freigeben"
+msgstr "Commenta il peer sul server o riabilitalo"
+
+#: src/wggui/ui/main_window.py:332
+msgid "Neuen QR-Code ausstellen…"
+msgstr "Genera un nuovo codice QR…"
+
+#: src/wggui/ui/main_window.py:333
+msgid "Neue Schlüssel für diesen Client und QR-Code – das alte Gerät muss neu scannen"
+msgstr "Nuove chiavi e codice QR per questo client: il vecchio dispositivo dovrà scansionarlo di nuovo"
+
+#: src/wggui/ui/main_window.py:335
+msgid "Peer entfernen…"
+msgstr "Rimuovi peer…"
+
+#: src/wggui/ui/main_window.py:337
+msgid "Peer aus der Server-Config löschen – mit Vorschau und Backup"
+msgstr "Elimina il peer dalla configurazione del server, con anteprima e backup"
+
+#: src/wggui/ui/main_window.py:339
+msgid "PublicKey kopieren"
+msgstr "Copia PublicKey"
+
+#: src/wggui/ui/main_window.py:348
+msgid "Protokoll anzeigen (Strg+L)"
+msgstr "Mostra registro (Ctrl+L)"
+
+#: src/wggui/ui/main_window.py:350
+msgid "Aktionen"
+msgstr "Azioni"
+
+#: src/wggui/ui/main_window.py:355
+msgid "Abgleichen"
+msgstr "Sincronizza"
+
+#: src/wggui/ui/main_window.py:359
+msgid "&Host"
+msgstr "&Host"
+
+#: src/wggui/ui/main_window.py:362
+msgid "&Interface"
+msgstr "&Interfaccia"
+
+#: src/wggui/ui/main_window.py:364
+msgid "&Peer"
+msgstr "&Peer"
+
+#: src/wggui/ui/main_window.py:366
+msgid "&Ansicht"
+msgstr "&Visualizza"
+
+#: src/wggui/ui/main_window.py:369
+msgid "Sprache"
+msgstr "Lingua"
+
+#: src/wggui/ui/main_window.py:380
+msgid "Automatisch aktualisieren (jede Minute)"
+msgstr "Aggiorna automaticamente (ogni minuto)"
+
+#: src/wggui/ui/main_window.py:385
+msgid "Spalten Empfangen/Gesendet"
+msgstr "Colonne Ricevuti/Inviati"
+
+#: src/wggui/ui/main_window.py:386
+msgid "Spalte PublicKey"
+msgstr "Colonna PublicKey"
+
+#: src/wggui/ui/main_window.py:410
+msgid "zuerst einen Host auswählen"
+msgstr "selezionare prima un host"
+
+#: src/wggui/ui/main_window.py:418
+msgid "{v1} (Host nutzt das System – Schlüssel im SSH-Agent)"
+msgstr "{v1} (l'host usa il sistema: chiave nell'agente SSH)"
+
+#: src/wggui/ui/main_window.py:426
+msgid "zuerst einen Peer in der Tabelle auswählen"
+msgstr "selezionare prima un peer nella tabella"
+
+#: src/wggui/ui/main_window.py:427
+msgid "Peer steht nur in der Laufzeit, nicht in der Datei – „Mit Server abgleichen…“"
+msgstr "Il peer è presente solo nell'interfaccia attiva, non nel file: «Sincronizza con il server…»"
+
+#: src/wggui/ui/main_window.py:431
+msgid "Peer entsperren…"
+msgstr "Abilita peer…"
+
+#: src/wggui/ui/main_window.py:455
+msgid "zuerst ein Interface auswählen"
+msgstr "selezionare prima un'interfaccia"
+
+#: src/wggui/ui/main_window.py:457 src/wggui/ui/main_window.py:410
+msgid "wird gerade gelesen"
+msgstr "lettura in corso"
+
+#: src/wggui/ui/main_window.py:459
+msgid "zuerst „Vom Server übernehmen…“"
+msgstr "prima scegliere «Importa dal server…»"
+
+#: src/wggui/ui/main_window.py:481 src/wggui/ui/main_window.py:372
+msgid "Systemsprache"
+msgstr "Lingua del sistema"
+
+#: src/wggui/ui/main_window.py:482
+msgid "Sprache „{name}“ gilt ab dem nächsten Start der App."
+msgstr "La lingua «{name}» sarà applicata al prossimo avvio dell'app."
+
+#: src/wggui/ui/main_window.py:544
+msgid "{host_name} – wird gelesen"
+msgstr "{host_name} – lettura in corso"
+
+#: src/wggui/ui/main_window.py:546
+msgid "{host_name} – Fehler"
+msgstr "{host_name} – errore"
+
+#: src/wggui/ui/main_window.py:551
+msgid "{host_ssh_target} – wird gelesen"
+msgstr "{host_ssh_target} – lettura in corso"
+
+#: src/wggui/ui/main_window.py:553
+msgid "{host_ssh_target} – Fehler beim letzten Lesen"
+msgstr "{host_ssh_target} – errore nell'ultima lettura"
+
+#: src/wggui/ui/main_window.py:576
+msgid "Steht nur auf dem Server. „Vom Server übernehmen…“ holt es in die App."
+msgstr "Presente solo sul server. «Importa dal server…» lo aggiunge all'app."
+
+#: src/wggui/ui/main_window.py:623
+msgid "Links einen Host oder ein Interface auswählen."
+msgstr "Selezionare un host o un'interfaccia a sinistra."
+
+#: src/wggui/ui/main_window.py:630 src/wggui/ui/main_window.py:633
+msgid "Protokoll anzeigen"
+msgstr "Mostra registro"
+
+#: src/wggui/ui/main_window.py:642
+msgid "wird gerade gelesen …"
+msgstr "lettura in corso …"
+
+#: src/wggui/ui/main_window.py:644
+msgid "noch nicht gelesen – <b>Aktualisieren</b> (F5)"
+msgstr "non ancora letto: <b>Aggiorna</b> (F5)"
+
+#: src/wggui/ui/main_window.py:645
+msgid "gelesen um {v1:%H:%M:%S}"
+msgstr "letto alle {v1:%H:%M:%S}"
+
+#: src/wggui/ui/main_window.py:657
+msgid ", Port {host_port}"
+msgstr ", porta {host_port}"
+
+#: src/wggui/ui/main_window.py:659
+msgid "System"
+msgstr "Sistema"
+
+#: src/wggui/ui/main_window.py:659
+msgid "noch nicht geprüft"
+msgstr "non ancora verificato"
+
+#: src/wggui/ui/main_window.py:66
+msgid "Name"
+msgstr "Nome"
+
+#: src/wggui/ui/main_window.py:66
+msgid "Status"
+msgstr "Stato"
+
+#: src/wggui/ui/main_window.py:66
+msgid "Endpoint"
+msgstr "Endpoint"
+
+#: src/wggui/ui/main_window.py:66
+msgid "Letzter Handshake"
+msgstr "Ultimo handshake"
+
+#: src/wggui/ui/main_window.py:660
+msgid "Zugriff"
+msgstr "Accesso"
+
+#: src/wggui/ui/main_window.py:660
+msgid "mit sudo"
+msgstr "con sudo"
+
+#: src/wggui/ui/main_window.py:660
+msgid "direkt als root"
+msgstr "direttamente come root"
+
+#: src/wggui/ui/main_window.py:661
+msgid "SSH-Schlüssel"
+msgstr "Chiave SSH"
+
+#: src/wggui/ui/main_window.py:662
+msgid "System (SSH-Agent, ssh-Config)"
+msgstr "Sistema (agente SSH, configurazione ssh)"
+
+#: src/wggui/ui/main_window.py:664
+msgid "Verbindung"
+msgstr "Connessione"
+
+#: src/wggui/ui/main_window.py:664
+msgid "ok (getestet um {v1:%H:%M:%S})"
+msgstr "ok (verificata alle {v1:%H:%M:%S})"
+
+#: src/wggui/ui/main_window.py:668
+msgid "– (kein systemd)"
+msgstr "– (senza systemd)"
+
+#: src/wggui/ui/main_window.py:669
+msgid "Interfaces"
+msgstr "Interfacce"
+
+#: src/wggui/ui/main_window.py:669
+msgid "{n_interface_names} · aktive Units: {v2}"
+msgstr "{n_interface_names} · unità attive: {v2}"
+
+#: src/wggui/ui/main_window.py:67
+msgid "Empfangen"
+msgstr "Ricevuti"
+
+#: src/wggui/ui/main_window.py:67
+msgid "Gesendet"
+msgstr "Inviati"
+
+#: src/wggui/ui/main_window.py:672
+msgid "Wird gelesen …"
+msgstr "Lettura in corso …"
+
+#: src/wggui/ui/main_window.py:674
+msgid "Fehler beim letzten Lesen"
+msgstr "Errore nell'ultima lettura"
+
+#: src/wggui/ui/main_window.py:676
+msgid "Erreichbar"
+msgstr "Raggiungibile"
+
+#: src/wggui/ui/main_window.py:678
+msgid "Noch nicht gelesen"
+msgstr "Non ancora letto"
+
+#: src/wggui/ui/main_window.py:697
+msgid "in der App"
+msgstr "nell'app"
+
+#: src/wggui/ui/main_window.py:70
+msgid "nicht übernommen"
+msgstr "non importato"
+
+#: src/wggui/ui/main_window.py:703
+msgid "nur auf dem Server – mit „Vom Server übernehmen…“ in die App holen"
+msgstr "solo sul server: usare «Importa dal server…» per aggiungerlo all'app"
+
+#: src/wggui/ui/main_window.py:706
+msgid "nur Laufzeit, keine Config-Datei"
+msgstr "solo nell'interfaccia attiva, nessun file di configurazione"
+
+#: src/wggui/ui/main_window.py:712
+msgid "nur Laufzeit"
+msgstr "solo nell'interfaccia attiva"
+
+#: src/wggui/ui/main_window.py:716
+msgid "Status unbekannt"
+msgstr "Stato sconosciuto"
+
+#: src/wggui/ui/main_window.py:719
+msgid "Läuft · {active} von {total} Peers aktiv"
+msgstr "In esecuzione · {active} peer attivi su {total}"
+
+#: src/wggui/ui/main_window.py:722
+msgid "Läuft nicht"
+msgstr "Non in esecuzione"
+
+#: src/wggui/ui/main_window.py:729
+msgid "{n} Abweichung zwischen App, Server-Datei und Laufzeit."
+msgid_plural "{n} Abweichungen zwischen App, Server-Datei und Laufzeit."
+msgstr[0] "{n} differenza tra app, file sul server e interfaccia attiva."
+msgstr[1] "{n} differenze tra app, file sul server e interfaccia attiva."
+
+#: src/wggui/ui/main_window.py:732
+msgid "Abgleichen…"
+msgstr "Sincronizza…"
+
+#: src/wggui/ui/main_window.py:734
+msgid " · App und Server stimmen überein"
+msgstr " · app e server corrispondono"
+
+#: src/wggui/ui/main_window.py:735
+msgid "Adresse"
+msgstr "Indirizzo"
+
+#: src/wggui/ui/main_window.py:736
+msgid "Quelle"
+msgstr "Origine"
+
+#: src/wggui/ui/main_window.py:738
+msgid "kopieren"
+msgstr "copia"
+
+#: src/wggui/ui/main_window.py:747
+msgid "SaveConfig = true: wg-quick überschreibt die Datei beim Stoppen mit dem Laufzeitstand – Kommentare, Namen und gesperrte Peers gehen dabei verloren. Empfehlung: Zeile entfernen."
+msgstr "SaveConfig = true: all'arresto wg-quick sovrascrive il file con lo stato dell'interfaccia attiva: commenti, nomi e peer disabilitati andranno persi. Si consiglia di rimuovere la riga."
+
+#: src/wggui/ui/main_window.py:778
+msgid "Weicht vom Server ab: {v1} – „Mit Server abgleichen…“"
+msgstr "Differisce dal server: {v1} – «Sincronizza con il server…»"
+
+#: src/wggui/ui/main_window.py:794
+msgid "PublicKey des Interfaces kopiert"
+msgstr "PublicKey dell'interfaccia copiato"
+
+#: src/wggui/ui/main_window.py:800
+msgid "PublicKey kopiert"
+msgstr "PublicKey copiato"
+
+#: src/wggui/ui/main_window.py:829
+msgid "{host_identity_file}.pub nicht gefunden oder nicht lesbar."
+msgstr "{host_identity_file}.pub non trovato o non leggibile."
+
+#: src/wggui/ui/main_window.py:879
+msgid "Lese"
+msgstr "Lettura di"
+
+#: src/wggui/ui/main_window.py:913
+msgid "Fertig um {v1:%H:%M:%S}: "
+msgstr "Completato alle {v1:%H:%M:%S}: "
+
+#: src/wggui/ui/main_window.py:915
+msgid " – Details im Protokoll (Strg+L)"
+msgstr " – dettagli nel registro (Ctrl+L)"
+
+#: src/wggui/ui/main_window.py:980
+msgid "{host_name}: App und Server stimmen überein"
+msgstr "{host_name}: app e server corrispondono"
+
+#: src/wggui/ui/main_window.py:986
+msgid "{host}: {n} Änderung in die App übernommen"
+msgid_plural "{host}: {n} Änderungen in die App übernommen"
+msgstr[0] "{host}: {n} modifica importata nell'app"
+msgstr[1] "{host}: {n} modifiche importate nell'app"
+
+#: src/wggui/ui/provision_dialogs.py:139
+msgid "Server-Tunnel anlegen – {side}"
+msgstr "Crea un tunnel tra server – {side}"
+
+#: src/wggui/ui/provision_dialogs.py:148
+msgid "Wie die Gegenseite diesen Server erreicht (Host:Port)."
+msgstr "Come l'altro lato raggiunge questo server (host:porta)."
+
+#: src/wggui/ui/provision_dialogs.py:149
+msgid "Was zu diesem Server geroutet wird: seine Tunnel-Adresse und optional Netze dahinter, durch Komma getrennt."
+msgstr "Cosa viene instradato verso questo server: il suo indirizzo nel tunnel ed eventuali reti dietro di esso, separati da virgole."
+
+#: src/wggui/ui/provision_dialogs.py:154
+msgid "Verbindung &offen halten (PersistentKeepalive 25 s)"
+msgstr "&Mantieni aperta la connessione (PersistentKeepalive 25 s)"
+
+#: src/wggui/ui/provision_dialogs.py:157
+msgid "&Gegenseite:"
+msgstr "&Controparte:"
+
+#: src/wggui/ui/provision_dialogs.py:158
+msgid "Endpoint dieser Seite:"
+msgstr "Endpoint di questo lato:"
+
+#: src/wggui/ui/provision_dialogs.py:159
+msgid "AllowedIPs dieser Seite:"
+msgstr "AllowedIPs di questo lato:"
+
+#: src/wggui/ui/provision_dialogs.py:160
+msgid "Endpoint der Gegenseite:"
+msgstr "Endpoint della controparte:"
+
+#: src/wggui/ui/provision_dialogs.py:161
+msgid "AllowedIPs der Gegenseite:"
+msgstr "AllowedIPs della controparte:"
+
+#: src/wggui/ui/provision_dialogs.py:165
+msgid "Auf beiden Servern kommt je ein Peer-Block dazu – zwei Vorschauen nacheinander, jeweils mit Backup und Rollback. Firewall, Weiterleitung und Routen ändert die App nicht."
+msgstr "Su ciascun server viene aggiunto un blocco peer – due anteprime in sequenza, ciascuna con backup e ripristino. L'app non modifica firewall, inoltro né instradamento."
+
+#: src/wggui/ui/provision_dialogs.py:192
+msgid "Kein weiteres Interface in der App – zuerst einen zweiten Server übernehmen."
+msgstr "Nessun'altra interfaccia nell'app – importa prima un secondo server."
+
+#: src/wggui/ui/provision_dialogs.py:195
+msgid "Gegenseite muss ein anderes Interface sein."
+msgstr "La controparte deve essere un'interfaccia diversa."
+
+#: src/wggui/ui/provision_dialogs.py:46
+msgid "Neues Interface – {host}"
+msgstr "Nuova interfaccia – {host}"
+
+#: src/wggui/ui/provision_dialogs.py:51
+msgid "Adresse des Servers im neuen VPN-Netz, mit Netzmaske."
+msgstr "Indirizzo del server nella nuova rete VPN, con maschera di rete."
+
+#: src/wggui/ui/provision_dialogs.py:55
+msgid "Jetzt &starten"
+msgstr "&Avvia ora"
+
+#: src/wggui/ui/provision_dialogs.py:57
+msgid "Beim &Booten starten (systemd)"
+msgstr "Avvia all'&accensione (systemd)"
+
+#: src/wggui/ui/provision_dialogs.py:61
+msgid "&Name:"
+msgstr "&Nome:"
+
+#: src/wggui/ui/provision_dialogs.py:62
+msgid "&Adresse:"
+msgstr "&Indirizzo:"
+
+#: src/wggui/ui/provision_dialogs.py:63
+msgid "&ListenPort:"
+msgstr "&ListenPort:"
+
+#: src/wggui/ui/provision_dialogs.py:66
+msgid "Der private Schlüssel entsteht auf dem Server und verlässt ihn nie. Firewall und Weiterleitung ändert die App nicht – den UDP-Port {port} ggf. selbst freigeben."
+msgstr "La chiave privata viene generata sul server e non lo lascia mai. L'app non modifica firewall né inoltro – se necessario, apri la porta UDP {port}."
+
+#: src/wggui/ui/widgets.py:91
+msgid "Fehler"
+msgstr "Errore"
+
+#: src/wggui/ui/widgets.py:91
+msgid "Hinweis"
+msgstr "Avviso"
+
+#: src/wggui/ui/widgets.py:91
+msgid "Information"
+msgstr "Informazione"
