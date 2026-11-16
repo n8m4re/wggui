@@ -41,7 +41,7 @@ dev = [
 testpaths = ["tests"]
 # The venv sees system and user site-packages (for PySide6); do not load unrelated pytest plugins
 addopts = "--disable-plugin-autoload -p pytestqt.plugin -m 'not integration'"
-markers = ["integration: SSH-Tests gegen die Distro-Testcontainer (tests/integration)"]
+markers = ["integration: SSH tests against the distro test containers (tests/integration)"]
 qt_api = "pyside6"
 
 [tool.ruff]
